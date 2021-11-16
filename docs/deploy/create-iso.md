@@ -2,14 +2,14 @@
 
 Creating Office ISO files allows you to share Office with others, or use it for multiple installations.
 
-For a better experience, please make sure you always download the latest `with runtime` version of Office Tool Plus. Sometimes we update the .NET Runtime.
+For a better experience, please make sure you always download the latest version of Office Tool Plus which `includes runtime`.
 
 We recommend that you update your Office ISO once a month, in line with the Office update frequency.
 
 Anyway, it's suggested to test the ISO file by yourself when finished creating.
 
 ::: tip Tip
-Using the `with runtime` version of Office Tool Plus allows you to run without the .NET Desktop Runtime installed, which is very helpful for multiple installations.
+Using the version of Office Tool Plus which includes runtime allows you to run without the .NET Desktop Runtime installed, which is very helpful for multiple installations.
 :::
 
 ## Create Office ISO with default configuration
@@ -52,6 +52,6 @@ If you want to download Office for another version of Windows, for example, to d
 
 Click "start deploy".
 
-When finished downloading, press F5 to clear all configurations, also you can "refresh" on the submenu of "view XML code".
+When finished downloading, press F5 to clear all configurations, also you can "refresh" on the submenu of "view XML code". After that, all products and languages should be clear.
 
 Finally change deployment mode to `Create ISO file`, then start deploy.

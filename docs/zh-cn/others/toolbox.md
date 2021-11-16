@@ -16,7 +16,7 @@ Office 企业版长期通道被锁定，一般情况下无法更改，也无法�
 
 如果 Office Tool Plus 检测到 vlmcs 组件，则会使用 vlmcs 进行更详细的检测，包括延迟以及激活结果。
 
-vlmcs 组件包含在 with vlmcs 版本的 Office Tool Plus 中。
+[点击此处](https://download.coolhub.top/Extensions/Components/)获取 vlmcs 组件
 
 ## 移除 Office
 

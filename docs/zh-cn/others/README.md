@@ -49,6 +49,7 @@
 | :-- | :-- | :-- |
 | /setImage value | 设置背景图 | value: 路径，支持 PNG 或 JPG。<br>支持本地以及 HTTP 路径。 |
 | /getKey value | 获取产品默认密钥 | value: 产品 ID. |
+| /getBWP | 获取今日必应壁纸 |  |
 
 ### 部署命令
 

@@ -9,11 +9,10 @@ Download Office Tool Plus from:
 
 Differences between the versions:
 
-- with runtime: Includes .NET Runtime library, you can run Office Tool Plus without .NET Runtime installation.
-- with vlmcs: Includes vlmcs component, it may be detected as a virus.
+- Includes runtime: Includes .NET Runtime, you can run Office Tool Plus without .NET Runtime installation.
 - Normal: Only Office Tool Plus and base component.
 
-> We recommend you to download Office Tool Plus with runtime.
+> We recommend you to download Office Tool Plus which includes runtime.
 
 ## Unpack
 

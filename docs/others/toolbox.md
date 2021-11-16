@@ -16,7 +16,7 @@ By default, Office Tool Plus uses a TCP connection to test the KMS host, it cann
 
 If Office Tool Plus detects a vlmcs component, it uses vlmcs for testing, including latency and activation results.
 
-The vlmcs component is included in the `with vlmcs` version of Office Tool Plus.
+[Click here to get vlmcs](https://download.coolhub.top/Extensions/Components/).
 
 ## Remove Office
 

@@ -4,7 +4,7 @@
 
 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
 
-with runtime 版本中自带 Runtime library，你可以直接打开 Office Tool Plus 而无需安装 Desktop Runtime.
+框架版本中自带 .NET Runtime，你可以直接打开 Office Tool Plus 而无需安装框架.
 
 ## 支持的系统
 

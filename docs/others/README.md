@@ -49,6 +49,7 @@ The commands are case-insensitive and are executed in the order they are entered
 | :-- | :-- | :-- |
 | /setImage value | Set background image. | value: Path, support PNG or JPG。<br>Supprt local or HTTP path. |
 | /getKey value | Get product default key. | value: Product ID. |
+| /getBWP | Get Bing wallpaper |  |
 
 ### Deploy commands
 

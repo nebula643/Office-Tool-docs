@@ -9,11 +9,10 @@
 
 版本区别：
 
-- with runtime 版本：包含 .NET Runtime，可以在不安装 .NET 5 的情况下直接运行 Office Tool Plus.
-- with vlmcs 版本：包含 vlmcs 组件，可以增强检测 KMS 可用性的功能，但容易被杀毒软件误报。
+- 包含框架版本：包含 .NET Runtime，可以在不安装 .NET Runtime 的情况下直接运行 Office Tool Plus.
 - 普通版本：仅包含 Office Tool Plus 以及基本组件。
 
-> 推荐下载 with runtime 版本，方便使用。
+> 推荐下载包含框架的版本，方便使用。
 
 ## 解压
 
