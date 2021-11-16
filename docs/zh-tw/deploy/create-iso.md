@@ -32,7 +32,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 
 使用此方式所建立的 Office ISO 將會包含預設配置，在 ISO 中執行 Office Tool Plus 時，會詢問用戶是否直接開始 Office 的安裝。
 
-挂载 Office ISO 后，如果你需要直接开始安装，您可以在 CD-ROM 的上下文菜单（右键菜单）中找到“立即安装”选项。
+掛載 Office ISO 後，如果您需要直接開始安裝，您可以在 CD-ROM 右鍵選單中點選 [立即安裝] 按鈕。
 
 ## 建立不含預設配置的 Office ISO
 
