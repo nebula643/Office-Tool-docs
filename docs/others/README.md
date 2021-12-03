@@ -89,7 +89,7 @@ If you want to set MAK, you can do like that:
 deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote_XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /channel PerpetualVL2021
 ```
 
-To ignore some attributes, use space instead like that:
+To ignore some attributes, leave blank like that:
 
 ``` batch
 deploy /addProduct ProPlus2021Volume__Access,Outlook,OneNote /channel PerpetualVL2021
