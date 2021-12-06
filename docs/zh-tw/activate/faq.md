@@ -1,17 +1,19 @@
-# FAQ
+# 疑難排解
 
-## The Software Licensing Service reported that license consumption failed.
+## 軟體授權服務報告指出授權使用失敗。
 
-Error code: 0xC004E015
+錯誤代碼: 0xC004E015
 
-### Solution
+### 解決方案
 
-Automatic operation: Repair Office activation, you can find the option in the Toolbox page. Then retry to activate Office.
+自動處理: 前往 [工具箱] 功能頁，嘗試使用「Office 無法正常啟用」工具進行修復，然後在嘗試重新啟用。
 
 ---
 
-Manual operation: Stop `Software Protection` service, delete three dat files on `C:\Windows\System32\spp\store_test\2.0` (There is a hidden file). Then retry to activate Office.
+手動處理: 
 
-After installed Office licenses, wait three minutes. Then continue your operation.
+停用 `軟體保護平台` 服務，然後將 `C:\Windows\System32\spp\store_test\2.0` 資料夾下的三個 (.dat) 檔案刪除 (有一個檔案是隱藏的)。
 
-**If the problem is not resolved, you may need to try again.**
+最後再重新啟用。
+
+**注意：如果問題並未解決，請稍待 3 分鐘後再繼續操作，以免問題復現，否則需要重新開始。**
