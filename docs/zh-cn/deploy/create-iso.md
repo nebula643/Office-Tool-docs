@@ -55,3 +55,55 @@ Office ISO 创建完成后，我们建议您验证一下 ISO 是否和你预期�
 下载完成后，按 F5 重置所有选项，也可以在「查看 XML 代码」的子菜单中找到「重置」选项，重置后所有产品和语言应该变为空。
 
 然后切换部署模式为“创建 Office ISO”，点击开始部署即可。
+
+## 更多信息
+
+### 如何同时下载 32 位和 64 位的 Office？
+
+在下载 Office 安装文件时，将体系结构从 32 位切换到 64 位（反之同理），然后再次点击 「开始部署」，Office Tool Plus 会将新的下载任务添加到当前任务中，下载完毕后，32 位和 64 位的 Office 就应该一起下载完毕了。当然您也可以选择下载完一个版本后再下载另一个版本，Office Tool Plus 会跳过已存在的文件，仅下载缺失的文件。
+
+### 没有开启自动播放的 Windows 如何使用一键安装功能？
+
+某些情况下，客户端上的 Windows 可能未开启自动播放功能或者该功能无法正常工作。为了依然能够使用一键安装，我们需要自行编写 BAT 文件并保存在 Office Tool Plus 的根目录下，以便创建 Office ISO 时 Office Tool Plus 能将其一并打包。
+
+::: tip 提示
+BAT 文件不能使用非英文字符命名，否则会无法正常打包至 Office ISO 中。
+
+ConfigForISO.xml 在创建 Office ISO 时由 Office Tool Plus 自动生成，您需要确保创建包含默认配置的 Office ISO.
+:::
+
+通常情况下，如果你只创建了单个版本的 Office ISO (例如 32 位)，则我们可以创建如下的 BAT 文件：
+
+**Setup.bat:**
+
+```batch
+@echo off
+
+"Office Tool Plus.exe" /isoInstall
+```
+
+执行以上命令时，Office Tool Plus 会查找 ConfigForISO.xml 并自动适配当前环境以便开始安装。
+
+如果创建了 32 位和 64 位二合一的版本，则可以分别使用以下命令启动安装程序：
+
+**Setup-32.bat:**
+
+```batch
+@echo off
+
+:: For 32-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 32
+```
+
+**Setup-64.bat:**
+
+```batch
+@echo off
+
+:: For 64-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 64
+```
+
+执行以上命令时，Office Tool Plus 会根据参数查找 XML 并加载，然后按照指定的参数修改体系结构和源路径属性值以便启动安装程序。
+
+_注意：如果没有特别需求，以上命令中的参数不需要使用双引号包括，否则可能会因为字符串转义而发生不可预料的问题。_
