@@ -21,4 +21,4 @@
 
 ## 執行
 
-使用 with runtime 版本時，您可以直接執行 Office Tool Plus，但您若使用的是不自帶函式庫的版本時，請確保您已安裝了 [.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構下載函式庫。**
+使用 with runtime 版本時，您可以直接執行 Office Tool Plus，但您若使用的是不自帶函式庫的版本時，請確保您已安裝了 [.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構下載函式庫。**

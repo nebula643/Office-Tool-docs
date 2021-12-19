@@ -2,7 +2,7 @@
 
 ## 框架
 
-[.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
+[.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe).
 
 框架版本中自带 .NET Runtime，你可以直接打开 Office Tool Plus 而无需安装框架.
 

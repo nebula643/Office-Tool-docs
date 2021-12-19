@@ -2,7 +2,7 @@
 
 ## Runtime
 
-[.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
+[.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe).
 
 `with runtime` version including Office Tool Plus and .NET Runtime, you can run Office Tool Plus without .NET Runtime installation.
 

@@ -2,7 +2,7 @@
 
 ## 框架
 
-[.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
+[.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe).
 
 with runtime 版本中 **已内含執行階段程式庫** ，您可以直接執行 Office Tool Plus，無需再安裝 **.NET Desktop Runtime**。
 
