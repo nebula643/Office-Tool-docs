@@ -60,7 +60,7 @@ For information on products and applications, you can view [Office Products Info
 In most cases, it is sufficient to select either the `Current Channel` or the `Semi-Annual Enterprise Channel`, the differences between which are listed in the following table.
 
 | Channel                          | Release frequency                                 | Feature updates                     |
-| :------------------------------- | ------------------------------------------------- | ----------------------------------- |
+| :------------------------------- | :------------------------------------------------ | :---------------------------------- |
 | Current Channel                  | At least once a month (likely more often).        | Same as release frequency.          |
 | Semi-Annual Enterprise Channel   | Once a month, on the second Tuesday of the month. | Twice a year (in January and July). |
 | Monthly Enterprise Channel       | Once a month, on the second Tuesday of the month. | Same as release frequency.          |
@@ -90,7 +90,7 @@ For more information, see [Choose between the 64-bit or 32-bit version of Office
 ## Deployment mode
 
 | Mode            | Description |
-| --------------- | ----------- |
+| :-------------- | :---------- |
 | Edit config     | Only for exporting/modifying XML configuration.   |
 | Download        | Only for downloading Office installation. |
 | Install         | You can install, uninstall, modify Office, etc. |
@@ -113,22 +113,22 @@ The module can do most of the features of the Office Deployment Tool, and also f
 The following content shows the differences between them.
 
 | Functions | Office Deployment Tool | Office Tool Plus |
-| :------- | ---------------------- | ---------------- |
-| Support for MECM.                 | √ | × |
-| Update deadline.                  | √ | × |
-| Migrate architecture.             | √ | × |
-| Force upgrade Office.             | √ | × |
-| Remove existing MSI versions of Office. | √ | × |
-| Install the same language as the previous MSI version. | √ | × |
-| Office applications preferences   | √ | × |
-| Use Office internal channels      | × | √ |
-| Install special products          | × | √ |
+| :------- | :--------------------- | :--------------- |
+| Support for MECM.                 | ✓ | × |
+| Update deadline.                  | ✓ | × |
+| Migrate architecture.             | ✓ | × |
+| Force upgrade Office.             | ✓ | × |
+| Remove existing MSI versions of Office. | ✓ | × |
+| Install the same language as the previous MSI version. | ✓ | × |
+| Office applications preferences   | ✓ | × |
+| Use Office internal channels      | × | ✓ |
+| Install special products          | × | ✓ |
 
 We recommend that Office Deployment Tools be used first. If there is a problem with Office Deployment Tools that cannot be fixed, or if there are special needs, use Office Tool Plus as installation module.
 
 ## Download settings
 
-Download settings only take effect in *download* mode, or if *install after download* is checked.
+Download settings only take effect in *download* mode, or if *Download first, then deploy* is checked.
 
 The following content shows the differences between them.
 
