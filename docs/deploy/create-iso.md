@@ -55,3 +55,55 @@ Click "start deploy".
 When finished downloading, press F5 to clear all configurations, also you can "refresh" on the submenu of "view XML code". After that, all products and languages should be clear.
 
 Finally change deployment mode to `Create ISO file`, then start deploy.
+
+## More information
+
+### How to download both 32-bit and 64-bit of Offce?
+
+When downloading Office, switch architecture from 32-bit to 64-bit, then click "start deploy" again. Also you can download 32-bit of Office first, then download 64-bit of Office. Office Tool Plus will skip to download the existing files.
+
+### How can I use one-click installation without autoplay enabled?
+
+In some cases, the autoplay may not be enabled on the Windows client or it may not work properly. To use one-click installation, we need to create batch file and save it to the root directory of Office Tool Plus. Office Tool Plus will pack up the files when creating Office ISO.
+
+::: tip Tip
+You MUST save the batch files using English name. Non-English characters is not allowed.
+
+ConfigForISO.xml created by Office Tool Plus, make sure you are creating Office ISO with default configuration.
+:::
+
+For single edition of Office ISO (such as 32-bit)，we can create the batch file:
+
+**Setup.bat:**
+
+```batch
+@echo off
+
+"Office Tool Plus.exe" /isoInstall
+```
+
+When the above command is executed, Office Tool Plus will look for `ConfigForISO.xml` and automatically start the installation.
+
+For 32-bit and 64-bit, using these commands:
+
+**Setup-32.bat:**
+
+```batch
+@echo off
+
+:: For 32-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 32
+```
+
+**Setup-64.bat:**
+
+```batch
+@echo off
+
+:: For 64-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 64
+```
+
+When the above command is executed, Office Tool Plus will load the `ConfigForISO.xml`, and modifies the architecture and source path attribute values according to the specified parameters in order to start the installation.
+
+_Note: If there is no special requirement, the parameters in the above commands do not need to be included with double quotes, otherwise unpredictable problems may occur._
