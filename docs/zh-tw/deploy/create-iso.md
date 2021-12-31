@@ -55,3 +55,55 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 下載完成後，按下 F5 鍵重設所有選項，亦可以在 [檢視代碼] 的子選單中找到 [重設] 選項。
 
 然後切換 「部署模式」 > [建立 ISO 檔案]，點擊 [開始部署] 即可。
+
+## 更多資訊
+
+### 如何同時下載 32 位元和 64 位元的 Office？
+
+在下載 Office 安裝文件時，將 [架構] 從 [32 位元] 改選擇成 [64 位元] (反之亦然)，然後再次點選 [開始部署]，Office Tool Plus 會在目前的下載任務中，新增一項新下載任務，32 位元和 64 位元的 Office 會同時下載完畢。您也可以在下載完第一項位元版本後，再行下載另一項位元版本，Office Tool Plus 會自動略過已存在的檔案，僅下載缺失的檔案。
+
+### Windows 沒有啟用自動播放的狀態下，如何使用一鍵安裝功能？
+
+在某些情況下，客戶端上的 Windows 可能沒有啟用自動播放功能，或其功能無法正常執行。為了使一鍵安裝功能執行順暢，您可能需要自行撰寫 BAT 文件，並將其儲存在 Office Tool Plus 的根目錄中，以便 Office Tool Plus 建立 ISO 檔時能將其一同納入。
+
+::: tip 提示
+BAT 檔案不可使用非英文字元命名，否則將無法正常納入至 Office ISO 中。
+
+ConfigForISO.xml 是在建立 Office ISO 時，由 Office Tool Plus 自動產生，您需要確保建立包含預設配置的 Office ISO。
+:::
+
+正常情況下，如果您只建立單項版本的 Office ISO (例如 32 位元)，則我們可以撰寫以下的 BAT 檔案:
+
+**Setup.bat:**
+
+```batch
+@echo off
+
+"Office Tool Plus.exe" /isoInstall
+```
+
+執行以上命令時，Office Tool Plus 會自動尋找 ConfigForISO.xml 檔案，並自動對應系統環境以進行安裝。
+
+如果建立了 32 位元和 64 位元二合一的 Office 版本，則可以分別使用以下命令啟動安裝程式：
+
+**Setup-32.bat:**
+
+```batch
+@echo off
+
+:: For 32-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 32
+```
+
+**Setup-64.bat:**
+
+```batch
+@echo off
+
+:: For 64-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 64
+```
+
+執行以上命令時，Office Tool Plus 會根據參數尋找對應的 XML 載入，然後依指定的參數變更架構和來源路徑值以啟動安裝程式。
+
+_注意：如果沒有特別需求，以上命令中的參數不需要使用雙引號包括，否則可能會因為字符串轉義而發生無法預料的問題。_
