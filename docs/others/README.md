@@ -47,7 +47,7 @@ The commands are case-insensitive and are executed in the order they are entered
 
 | Command | Description |  |
 | :-- | :-- | :-- |
-| /setImage value | Set background image. | value: path, support PNG or JPG. Supprt local or HTTP path. |
+| /setImage value | Set background image. | value: path, support PNG or JPG. Support local or HTTP path. |
 | /getKey value | Get product default key. | value: product ID. |
 | /getBWP | Get Bing wallpaper. |  |
 | /resetNotif | Reset notifications to show closed notifications again. | |
