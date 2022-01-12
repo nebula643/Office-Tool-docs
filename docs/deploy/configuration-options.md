@@ -116,11 +116,9 @@ The following content shows the differences between them.
 | :------- | :--------------------- | :--------------- |
 | Support for MECM.                 | ✓ | × |
 | Update deadline.                  | ✓ | × |
-| Migrate architecture.             | ✓ | × |
 | Force upgrade Office.             | ✓ | × |
 | Remove existing MSI versions of Office. | ✓ | × |
 | Install the same language as the previous MSI version. | ✓ | × |
-| Office applications preferences   | ✓ | × |
 | Use Office internal channels      | × | ✓ |
 | Install special products          | × | ✓ |
 

@@ -20,4 +20,4 @@
 
 ## 运行
 
-使用 with runtime 版本时，你可以直接运行 Office Tool Plus，如果你使用的是不自带框架的版本，请确保你已经安装了 [.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe)，**请注意，软件需要的是 x86 的运行库，与你的系统架构版本无关系。**
+使用 with runtime 版本时，你可以直接运行 Office Tool Plus，如果你使用的是不自带框架的版本，请确保你已经安装了 [.NET 6.0 Desktop Runtime x86](https://aka.ms/dotnet/6.0/windowsdesktop-runtime-win-x86.exe)，**请注意，软件需要的是 x86 的运行库，与你的系统架构版本无关系。**

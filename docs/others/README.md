@@ -47,9 +47,11 @@ The commands are case-insensitive and are executed in the order they are entered
 
 | Command | Description |  |
 | :-- | :-- | :-- |
-| /setImage value | Set background image. | value: Path, support PNG or JPG。<br>Supprt local or HTTP path. |
-| /getKey value | Get product default key. | value: Product ID. |
-| /getBWP | Get Bing wallpaper |  |
+| /setImage value | Set background image. | value: path, support PNG or JPG. Supprt local or HTTP path. |
+| /getKey value | Get product default key. | value: product ID. |
+| /getBWP | Get Bing wallpaper. |  |
+| /resetNotif | Reset notifications to show closed notifications again. | |
+| /loadConfig value | Load XML config from web. | value: url. |
 
 ### Deploy commands
 

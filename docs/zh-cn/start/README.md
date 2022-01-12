@@ -48,7 +48,6 @@ Office 许可证能够共存，而不只是零售版或者批量版本
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程序)
-├── ReadMe.txt (说明文件)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files

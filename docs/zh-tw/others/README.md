@@ -49,6 +49,8 @@
 | :-- | :-- | :-- |
 | /setImage value | 設定背景圖 | value: 路徑, 支援 PNG, JPG。<br>支援本機和 HTTP 路徑。 |
 | /getKey value | 取得產品預設金鑰 | value: 產品識別碼。 |
+| /resetNotif | Reset notifications to show closed notifications again. | |
+| /loadConfig value | Load XML config from web. | value: url. |
 
 ### 部署指令
 

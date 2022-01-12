@@ -48,7 +48,6 @@ Office 授權不限於零售版或大量授權版，都可以同時存在。
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程式)
-├── ReadMe.txt (說明文件)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files

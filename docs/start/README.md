@@ -48,7 +48,6 @@ You can install a volume license besides the existing activated retail license. 
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (main program)
-├── ReadMe.txt (help docs)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files

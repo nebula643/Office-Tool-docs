@@ -9,8 +9,7 @@
 
 版本區別：
 
-- with runtime: 包含 .NET Runtime 函式庫，可以在不安裝 .NET 5 的情況下直接開啟 Office Tool Plus。
-- with vlmcs: 包含 vlmcs 模組，可以增強檢測 KMS 可用性的功能。但這項功能有機會被防毒軟體報毒。（本模組內無病毒）
+- with runtime: 包含 .NET Runtime 函式庫，可以在不安裝 .NET 6.0 的情況下直接開啟 Office Tool Plus。
 - 普通版本：僅包含 Office Tool Plus 以及基本模組。
 
 > 我們推薦下載 with runtime 版本，方便又快速。
@@ -21,4 +20,4 @@
 
 ## 執行
 
-使用 with runtime 版本時，您可以直接執行 Office Tool Plus，但您若使用的是不自帶函式庫的版本時，請確保您已安裝了 [.NET 5 Desktop Runtime x86](https://aka.ms/dotnet/5.0/windowsdesktop-runtime-win-x86.exe)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構下載函式庫。**
+使用 with runtime 版本時，您可以直接執行 Office Tool Plus，但您若使用的是不自帶函式庫的版本時，請確保您已安裝了 [.NET 6.0 Desktop Runtime x86](https://aka.ms/dotnet/6.0/windowsdesktop-runtime-win-x86.exe)，**請注意，Office Tool Plus 必須使用 x86 位元的函式庫，並不是依照您的系統架構下載函式庫。**
