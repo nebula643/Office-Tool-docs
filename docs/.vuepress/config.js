@@ -112,8 +112,7 @@ module.exports = {
 					{ text: '官方博客', link: 'https://www.coolhub.top' },
 					{
 						text: '群组', items: [
-							{ text: 'QQ: 481262749', link: 'https://otp.landian.vip/grouplink/qq.html' },
-							{ text: 'WeChat', link: 'https://otp.landian.vip/grouplink/wechat.html' },
+							{ text: 'QQ: 713837704', link: 'https://otp.landian.vip/grouplink/qq.html' },
 							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
 						]
 					}
