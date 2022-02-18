@@ -12,5 +12,5 @@ features:
   details: 没有多余的东西，只为 Office 而生。
 - title: 强大
   details: 不限于基本部署，你还能做到更多。
-footer: GPL-3.0 Licensed | Copyright © 2016- 2021 Yerong All Rights Reserved.
+footer: GPL-3.0 Licensed | Copyright © 2016 - 2022 Yerong All Rights Reserved.
 ---

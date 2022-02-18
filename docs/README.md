@@ -12,5 +12,5 @@ features:
   details: Born for Office deployments.
 - title: Powerful
   details: Not only for install, you can do much more.
-footer: GPL-3.0 Licensed | Copyright © 2016- 2021 Yerong All Rights Reserved.
+footer: GPL-3.0 Licensed | Copyright © 2016 - 2022 Yerong All Rights Reserved.
 ---
