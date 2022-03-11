@@ -110,12 +110,12 @@ ospp [options]
 When using the OSPP command, you need to specify it as OSPP and then write the parameters, for example, the following is a simple OSPP command.
 
 ``` batch
-ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 ```
 
 | Command | Description | Usage |
 | :-- | :-- | :-- |
-| /ilbyid value | Installs licenses with user-provided product ID. | /ilbyid MondoVolume |
+| /insLicID value | Installs licenses with user-provided product ID. | /insLicID ProPlus2021Volume |
 | /inpkey:value | Installs a product key. | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
 | /unpkey:value | Uninstalls an installed product key. | /unpkey:XXXXX |
 | /sethst:value | Sets a KMS host name. | /sethst:kms.example.com |

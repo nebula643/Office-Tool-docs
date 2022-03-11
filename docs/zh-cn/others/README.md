@@ -110,12 +110,12 @@ ospp [options]
 使用 OSPP 命令时，你需要指定为 OSPP，然后再写参数，例如以下是一条简单的激活命令：
 
 ``` batch
-ospp /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
+ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 ```
 
 | 命令 | 说明 | 使用方法 |
 | :-- | :-- | :-- |
-| /ilbyid value | 安装指定产品的 Office 许可证。 | /ilbyid MondoVolume |
+| /insLicID value | 安装指定产品的 Office 许可证。 | /insLicID ProPlus2021Volume |
 | /inpkey:value | 安装指定的 Office 密钥。 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
 | /unpkey:value | 卸载指定的 Office 密钥。 | /unpkey:XXXXX |
 | /sethst:value | 设置 KMS 主机地址。 | /sethst:kms.example.com |
