@@ -12,8 +12,14 @@
 
 手动处理：
 
-停止计算机中的 `Software Protection` 服务，然后将 `C:\Windows\System32\spp\store_test\2.0` 下的三个 (.dat) 文件删除（有一个隐藏的）。
+停止计算机中的 `Software Protection` 服务，然后将 `C:\Windows\System32\spp\store\2.0` 下的 (.dat) 文件全部删除（Windows Insider 文件夹为 store_test）。
 
 最后再重新开始激活。
 
 **注意：安装完许可证后，请等待三分钟后再继续操作，以免问题复现，否则需要重新开始。**
+
+## 软件授权服务报告令牌存储中的令牌包含无效的哈希
+
+错误代码：0x8004E108
+
+解决方案同上。

@@ -2,7 +2,7 @@
 
 透過建立 Office ISO 檔案，您可以輕鬆與他人共享 Office 安裝文件，適合公司用於大量、多次部署。
 
-為了確保您得到最佳體驗，請確保您始終從我們的 [官方網站](https://otp.landian.vip/) 下載了最新的 with runtime 版本的 Office Tool Plus。在必要時，我們會更新函式庫文件和 .NET Runtime 檔案，這些檔案並不會隨著 Office Tool Plus 更新系統跟著更新。需要您手動重新下載。
+為了確保您得到最佳體驗，請確保您始終從我們的 [官方網站](https://otp.landian.vip/) 下載了最新的 with runtime 版本的 Office Tool Plus。
 
 另外，我們也建議您在**每月的第二個星期二**更新一次 Office ISO 文件，使得 Office 能處在最新版本中。
 
@@ -14,7 +14,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 
 ## 建立包含預設配置的 Office ISO
 
-在確保您使用的 Office Tool Plus 無誤後，開啟 Office Tool Plus.exe。
+開啟 Office Tool Plus，在 [部署] 功能頁，切換 [部署模式] 到 [建立 ISO 檔案]，并點選 [下載後再部署]。
 
 新增產品，按需求選擇 (例如 Office 2021 專業增強版 (大量授權) )。
 
@@ -36,7 +36,7 @@ with runtime 版本的 Office Tool Plus 允許您在沒有安裝 .NET Desktop Ru
 
 ## 建立不含預設配置的 Office ISO
 
-開啟 Office Tool Plus，在 [部署] 功能頁，切換 [部署模式] 到  [下載]。
+開啟 Office Tool Plus，在 [部署] 功能頁，切換 [部署模式] 到 [下載]。
 
 新增產品，按需求選擇 (例如 Office 2021 專業增強版 (大量授權) )。
 

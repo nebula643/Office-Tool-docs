@@ -36,12 +36,12 @@ If you check "Deploy proofing tools only", the language will be installed as pro
 
 ### Language Type
 
-| Type                           | Description |
-| :----------------------------- | :---------- |
-| Full                           | The language pack includes display language and proofing tools. |
-| Partial                        | The language pack includes display language for some Office applications and includes proofing tools. |
+| Type                           | Description                                                                                                   |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Full                           | The language pack includes display language and proofing tools.                                               |
+| Partial                        | The language pack includes display language for some Office applications and includes proofing tools.         |
 | Partial without proofing tools | The language pack includes display language for some Office applications but does not include proofing tools. |
-| Proofing tools                 | The language pack only include spell checker. |
+| Proofing tools                 | The language pack only include spell checker.                                                                 |
 
 ## Applications
 
@@ -89,11 +89,11 @@ For more information, see [Choose between the 64-bit or 32-bit version of Office
 
 ## Deployment mode
 
-| Mode            | Description |
-| :-------------- | :---------- |
-| Edit config     | Only for exporting/modifying XML configuration.   |
-| Download        | Only for downloading Office installation. |
-| Install         | You can install, uninstall, modify Office, etc. |
+| Mode            | Description                                                                               |
+| :-------------- | :---------------------------------------------------------------------------------------- |
+| Edit config     | Only for exporting/modifying XML configuration.                                           |
+| Download        | Only for downloading Office installation.                                                 |
+| Install         | You can install, uninstall, modify Office, etc.                                           |
 | Create ISO file | Package the Office installation with Office Tool Plus. Write configuration if configured. |
 
 The Office installation contains Office, Visio and Project, provided by Microsoft.
@@ -113,14 +113,13 @@ The module can do most of the features of the Office Deployment Tool, and also f
 The following content shows the differences between them.
 
 | Functions | Office Deployment Tool | Office Tool Plus |
-| :------- | :--------------------- | :--------------- |
-| Support for MECM.                 | ✓ | × |
-| Update deadline.                  | ✓ | × |
-| Force upgrade Office.             | ✓ | × |
-| Remove existing MSI versions of Office. | ✓ | × |
+| :-------  | :--------------------- | :--------------- |
+| Update deadline.                   | ✓ | × |
+| Force upgrade Office.              | ✓ | × |
+| Remove existing MSI versions of Office.                | ✓ | × |
 | Install the same language as the previous MSI version. | ✓ | × |
-| Use Office internal channels      | × | ✓ |
-| Install special products          | × | ✓ |
+| Use Office internal channels       | × | ✓ |
+| Install internal products          | × | ✓ |
 
 We recommend that Office Deployment Tools be used first. If there is a problem with Office Deployment Tools that cannot be fixed, or if there are special needs, use Office Tool Plus as installation module.
 
@@ -131,10 +130,10 @@ Download settings only take effect in *download* mode, or if *Download first, th
 The following content shows the differences between them.
 
 | Engine                 | Display information | Set proxy | Pause & resume | Cancel |
-| :--------------------- | --- | --- | --- | --- |
+| :--------------------- | ------------------- | --------- | -------------- | ------ |
 | Thunder                | ✓ | ✓ | ✓ | ✓ |
-| Office Tool Plus       | ✓ | ✗ | ✗ | ✓ |
-| Office Deployment Tool | ✗ | ✗ | ✗ | ✗ |
+| Office Tool Plus       | ✓ | × | × | ✓ |
+| Office Deployment Tool | × | × | × | × |
 
 When Office Tool Plus cannot find the Thunder component, will fall back to Office Tool Plus as the download engine.
 

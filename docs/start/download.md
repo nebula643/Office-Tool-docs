@@ -3,9 +3,6 @@
 Download Office Tool Plus from:
 
 - [Office Tool Plus official website](http://otp.landian.vip/)
-- [Office Tool Plus mirror download](https://otp.landian.vip/redirect/download.html)
-- [OneDrive for Business](https://coolhub-my.sharepoint.com/:f:/g/personal/yerong_coolhub_onmicrosoft_com/Ev9IUbXAw01JgwrAgsIFB8YBzJebdZZpmsR9hZFAZZVDgg?e=AkSdZU)
-- [GitHub Releases](https://github.com/YerongAI/Office-Tool/releases)
 
 Differences between the versions:
 

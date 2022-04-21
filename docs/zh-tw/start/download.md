@@ -1,11 +1,8 @@
 # 下載並開始使用
 
-您可以在以下列表中的任意地方下載 Office Tool Plus。
+下載 Office Tool Plus：
 
 - [Office Tool Plus 官方網站](http://otp.landian.vip/)
-- [Office Tool Plus 下載站點](https://otp.landian.vip/redirect/download.html)
-- [OneDrive for Business](https://coolhub-my.sharepoint.com/:f:/g/personal/yerong_coolhub_onmicrosoft_com/Ev9IUbXAw01JgwrAgsIFB8YBzJebdZZpmsR9hZFAZZVDgg?e=AkSdZU)
-- [GitHub Releases](https://github.com/YerongAI/Office-Tool/releases)
 
 版本區別：
 

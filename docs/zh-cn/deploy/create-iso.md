@@ -2,7 +2,7 @@
 
 创建 Office ISO 文件允许你与其他人分享 Office，或者用于大批量、多次安装。
 
-为了获得更好的体验，请确保你始终从[官方网站](https://otp.landian.vip/)下载最新的包含框架的 Office Tool Plus，有时候我们会更新 .NET Runtime，这些文件不会随着 Office Tool Plus 的自动升级而更新，需要手动重新下载。
+为了获得更好的体验，请确保你始终从[官方网站](https://otp.landian.vip/)下载最新的包含框架的 Office Tool Plus.
 
 我们建议您一个月更新一次 Office ISO，与 Office 更新频率保持一致，每个月的第二个星期二为 Office 固定的补丁日。
 
@@ -14,7 +14,7 @@ Office ISO 创建完成后，我们建议您验证一下 ISO 是否和你预期�
 
 ## 创建包含默认配置的 Office ISO
 
-打开 Office Tool Plus，在部署页面，切换部署模式为“创建 Office ISO”，并勾选下载后部署。
+打开 Office Tool Plus，在部署页面，切换部署模式为“创建 Office ISO”，并勾选下载后再部署。
 
 添加产品，按需选择，比如 Office 2021 专业增强版 - 批量许可证。
 

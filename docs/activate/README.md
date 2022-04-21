@@ -51,7 +51,7 @@ This function will remove all Office licenses on your computer, but it will NOT 
 
 ### Install key
 
-Installs a product key (replaces existing key) with a provided product key. If you get a "Product SKU is not found", please install the correct license first.
+Installs a product key (replaces existing key) with a provided product key. If you get a message "Product SKU is not found" when installing a key, please install the correct license first.
 
 An example of the key: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
 
