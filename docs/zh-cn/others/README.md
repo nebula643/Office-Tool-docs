@@ -41,7 +41,7 @@
 - <kbd>Ctrl + L</kbd>: 安装 iSlide（仅部署页面）
 - <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署（仅部署页面）
 
-### v8 版本
+### V8 版本
 
 - <kbd>Esc</kbd>: 返回
 - <kbd>F1</kbd>: 显示帮助
@@ -63,27 +63,27 @@
 
 Office Tool Plus.Console 是一个命令行程序，默认情况下，通过 Office Tool Plus 执行命令时，CMD 将会立即返回，不会等待 Office Tool Plus 退出。通过 Office Tool Plus.Console 执行命令时，CMD 将会等待程序退出，并且支持输出程序日志。
 
-以下命令示例启动 Office Tool Plus 可以开启日志输出：
+以下命令示例启动 Office Tool Plus 日志输出：
 
-```batch
+``` batch
 "Office Tool Plus.Console" /enableLog
 ```
 
 以下命令示例启动 Office 2021 的在线安装：
 
-```batch
+``` batch
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 若要进行离线安装，你需要提前下载好 Office 安装文件，然后使用 */sourcePath* 参数指定安装文件的位置，你还需要使用 /version 指定 Office 安装文件的版本：
 
-```batch
+``` batch
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
 ```
 
 以下命令示例使用 KMS 激活 Office 2021 专业增强版客户端：
 
-```batch
+``` batch
 "Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
 ```
 

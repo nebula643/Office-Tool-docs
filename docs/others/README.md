@@ -65,25 +65,25 @@ Office Tool Plus.Console is a command line program. By default, when executing a
 
 Here is a example to enable logging output for Office Tool Plus:
 
-```batch
+``` batch
 "Office Tool Plus.Console" /enableLog
 ```
 
 Here is a example to install Office 2021 Pro Plus (online installation):
 
-```batch
+``` batch
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 If you want to install Office using offline installation, use */sourcePath* to specify the location of Office installation, use */version* to specify the Office version:
 
-```batch
+``` batch
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
 ```
 
 Here is a example to activate Office 2021 Pro Plus via KMS:
 
-```batch
+``` batch
 "Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
 ```
 
