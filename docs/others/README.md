@@ -27,6 +27,22 @@ By checking it, Office Tool Plus will loading the internel channels and products
 
 ## Office Tool Plus shortcut keys
 
+### V9
+
+- <kbd>F1</kbd>: Help.
+- <kbd>F5</kbd>: Refresh Office information and reset deploy settings (on deploy page).
+- <kbd>Ctrl + 1</kbd>: Switch to home page.
+- <kbd>Ctrl + 2</kbd>: Switch to deploy page.
+- <kbd>Ctrl + 3</kbd>: Switch to activate page.
+- <kbd>Ctrl + 4</kbd>: Switch to toolbox page.
+- <kbd>Ctrl + 5</kbd>: Switch to documents converter.
+- <kbd>Ctrl + T</kbd>: Display setting page.
+- <kbd>Ctrl + B</kbd>: Display about page.
+- <kbd>Ctrl + L</kbd>: Install iSlide (on deploy page).
+- <kbd>Ctrl + Shift + D</kbd>: Ignore errors or warnings, force start deploy (on deploy page).
+
+### V8
+
 - <kbd>Esc</kbd>: Back.
 - <kbd>F1</kbd>: Help.
 - <kbd>F5</kbd>: Refresh Office information and reset deploy settings (on deploy page).
@@ -43,6 +59,40 @@ By checking it, Office Tool Plus will loading the internel channels and products
 
 The commands are case-insensitive and are executed in the order they are entered. If the path contains spaces, use "" (double quotes) to include the path.
 
+### Office Tool Plus Console Helper
+
+Office Tool Plus.Console is a command line program. By default, when executing a command through Office Tool Plus, the CMD will return immediately and will not wait for Office Tool Plus to exit. Office Tool Plus.Console will wait for the program to exit and supports outputting the log when executing commands.
+
+Here is a example to enable logging output for Office Tool Plus:
+
+```batch
+"Office Tool Plus.Console" /enableLog
+```
+
+Here is a example to install Office 2021 Pro Plus (online installation):
+
+```batch
+"Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
+```
+
+If you want to install Office using offline installation, use */sourcePath* to specify the location of Office installation, use */version* to specify the Office version:
+
+```batch
+"Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
+```
+
+Here is a example to activate Office 2021 Pro Plus via KMS:
+
+```batch
+"Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
+```
+
+You can run deploy commands first, then ospp commands. The Office will be installed and activated automated.
+
+::: tip Tip
+The deploy and ospp commands enable logging by default, you do not need to specify the /enableLog parameter again. deploy and ospp commands cannot be mixed with other commands, or they will not be recognized.
+:::
+
 ### Application commands
 
 | Command | Description |  |
@@ -52,6 +102,10 @@ The commands are case-insensitive and are executed in the order they are entered
 | /getBWP | Get Bing wallpaper. |  |
 | /resetNotif | Reset notifications to show closed notifications again. | |
 | /loadConfig value | Load XML config from web. | value: url. |
+
+::: warning Warning
+/getkey command was removed on V9, please visit [products information](https://www.coolhub.top/tech-articles/products.html) to get the keys.
+:::
 
 ### Deploy commands
 
@@ -73,9 +127,15 @@ deploy /addProduct O365ProPlusRetail
 | /migrateArch | Migrate architecture. |  |
 | /version value | Set Office version | value: Office version. |
 | /sourcePath value | Set source path. | value: path, support local or SMB path. |
+| /display value | Display office installation interface. | value: true (Visible)，false (Hidden) |
+| /acceptEULA | Accept EULA for users. |  |
 | /module value | Set installation module. | value: 0 or 1。<br>0: Office Deployment Tool, 1: Office Tool Plus. |
 | /downloadFirst | Set install after download. |  |
 | /createShortcuts | Create desktop shortcuts. |  |
+
+::: warning Warning
+/display and / acceptEULA commands only available on V9.
+:::
 
 #### Deploy Office examples
 

@@ -27,6 +27,22 @@
 
 ## Office Tool Plus 快捷键
 
+### V9 版本
+
+- <kbd>F1</kbd>: 显示帮助
+- <kbd>F5</kbd>: 刷新信息/重置配置（仅部署页面）
+- <kbd>Ctrl + 1</kbd>: 切换到主页
+- <kbd>Ctrl + 2</kbd>: 切换到部署页面
+- <kbd>Ctrl + 3</kbd>: 切换到激活页面
+- <kbd>Ctrl + 4</kbd>: 切换到工具箱页面
+- <kbd>Ctrl + 5</kbd>: 切换到文档转换页面
+- <kbd>Ctrl + T</kbd>: 显示设置页面
+- <kbd>Ctrl + B</kbd>: 显示关于页面
+- <kbd>Ctrl + L</kbd>: 安装 iSlide（仅部署页面）
+- <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署（仅部署页面）
+
+### v8 版本
+
 - <kbd>Esc</kbd>: 返回
 - <kbd>F1</kbd>: 显示帮助
 - <kbd>F5</kbd>: 刷新信息/重置配置（仅部署页面）
@@ -43,6 +59,40 @@
 
 命令不区分大小写，按照输入顺序执行。如果路径中含有空格，请使用 "" (英文双引号) 将路径包括起来。
 
+### Office Tool Plus Console Helper
+
+Office Tool Plus.Console 是一个命令行程序，默认情况下，通过 Office Tool Plus 执行命令时，CMD 将会立即返回，不会等待 Office Tool Plus 退出。通过 Office Tool Plus.Console 执行命令时，CMD 将会等待程序退出，并且支持输出程序日志。
+
+以下命令示例启动 Office Tool Plus 可以开启日志输出：
+
+```batch
+"Office Tool Plus.Console" /enableLog
+```
+
+以下命令示例启动 Office 2021 的在线安装：
+
+```batch
+"Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
+```
+
+若要进行离线安装，你需要提前下载好 Office 安装文件，然后使用 */sourcePath* 参数指定安装文件的位置，你还需要使用 /version 指定 Office 安装文件的版本：
+
+```batch
+"Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
+```
+
+以下命令示例使用 KMS 激活 Office 2021 专业增强版客户端：
+
+```batch
+"Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
+```
+
+您可以先执行 deploy 命令，然后执行 ospp 命令，以便达到自动安装以及激活的效果。
+
+::: tip 提示
+deploy 和 ospp 命令默认启用日志输出，您无需额外指定 /enableLog 参数。deploy 和 ospp 命令不可以和其他命令混用，否则会无法识别。
+:::
+
 ### 程序命令
 
 | 命令 | 说明 |  |
@@ -52,6 +102,10 @@
 | /getBWP | 获取今日必应壁纸 |  |
 | /resetNotif | 重置通知，以便再次显示已经关闭了的通知 | |
 | /loadConfig value | 从 Web 路径加载 XML 配置文件 | value: 网址 |
+
+::: warning 注意
+Office Tool Plus V9 版本已移除 /getkey 命令，您可以从 [产品列表](https://www.coolhub.top/tech-articles/products.html) 中获取密钥。
+:::
 
 ### 部署命令
 
@@ -73,9 +127,15 @@ deploy /addProduct O365ProPlusRetail
 | /migrateArch | 迁移体系结构 |  |
 | /version value | 设置 Office 版本号 | value: Office 版本号。 |
 | /sourcePath value | 设置源路径属性 | value: 路径，支持本地、SMB 路径。 |
+| /display value | 设置是否显示 Office 安装界面 | value: true 显示，false 隐藏 |
+| /acceptEULA | 代表用户接受许可条款 |  |
 | /module value | 设置安装模块 | value: 0 或 1。<br>0: Office 部署工具，1: Office Tool Plus. |
 | /downloadFirst | 设置下载后安装 |  |
 | /createShortcuts | 创建桌面快捷方式 |  |
+
+::: warning 注意
+/display 和 / acceptEULA 参数仅在 V9 版本中可用。
+:::
 
 #### 部署 Office 示例
 
@@ -115,11 +175,11 @@ ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 
 | 命令 | 说明 | 使用方法 |
 | :-- | :-- | :-- |
-| /insLicID value | 安装指定产品的 Office 许可证。 | /insLicID ProPlus2021Volume |
-| /inpkey:value | 安装指定的 Office 密钥。 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
-| /unpkey:value | 卸载指定的 Office 密钥。 | /unpkey:XXXXX |
-| /sethst:value | 设置 KMS 主机地址。 | /sethst:kms.example.com |
-| /setprt:value | 设置 KMS 主机端口，默认 1688. | /setprt:1688 |
-| /act | 激活 Office 客户端产品。 | /act |
+| /insLicID value | 安装指定产品的 Office 许可证 | /insLicID ProPlus2021Volume |
+| /inpkey:value | 安装指定的 Office 密钥 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
+| /unpkey:value | 卸载指定的 Office 密钥 | /unpkey:XXXXX |
+| /sethst:value | 设置 KMS 主机地址 | /sethst:kms.example.com |
+| /setprt:value | 设置 KMS 主机端口，默认 1688 | /setprt:1688 |
+| /act | 激活 Office 客户端产品 | /act |
 
 有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。
