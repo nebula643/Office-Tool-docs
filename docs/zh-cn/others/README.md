@@ -66,24 +66,56 @@ Office Tool Plus.Console 是一个命令行程序，默认情况下，通过 Off
 以下命令示例启动 Office Tool Plus 日志输出：
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" /enableLog
 ```
 
 以下命令示例启动 Office 2021 的在线安装：
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 若要进行离线安装，你需要提前下载好 Office 安装文件，然后使用 */sourcePath* 参数指定安装文件的位置，你还需要使用 /version 指定 Office 安装文件的版本：
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
 ```
 
 以下命令示例使用 KMS 激活 Office 2021 专业增强版客户端：
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
 ```
 

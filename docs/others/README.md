@@ -66,24 +66,56 @@ Office Tool Plus.Console is a command line program. By default, when executing a
 Here is a example to enable logging output for Office Tool Plus:
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" /enableLog
 ```
 
 Here is a example to install Office 2021 Pro Plus (online installation):
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 If you want to install Office using offline installation, use */sourcePath* to specify the location of Office installation, use */version* to specify the Office version:
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
 ```
 
 Here is a example to activate Office 2021 Pro Plus via KMS:
 
 ``` batch
+@echo off
+title Office Tool Plus - Console
+
+:: Make sure you have administrator permission.
+set "Apply=%*"
+cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
+
+:: Run commands.
 "Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
 ```
 
