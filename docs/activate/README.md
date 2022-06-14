@@ -69,10 +69,10 @@ You can activate product with provided Confirmation ID.
 
 ## KMS management
 
-KMS host can be a hostname，or an IP address.
+KMS host can be a hostname, or an IP address.
 For example：`kms.example.com` or `192.168.123.1`
 
-The default port of the KMS host is 1688，You may choose the custom port if necessary.
+The default port of the KMS host is 1688, You may choose the custom port if necessary.
 
 You can only apply the port, or apply the port with the host address. If the KMS port is not empty, clicking "Set KMS host" will also save the port setting.
 

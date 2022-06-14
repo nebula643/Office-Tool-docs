@@ -73,7 +73,7 @@ All the channels listed in the table are stable channels.
 
 Each channel releases security updates (if needed) on the second Tuesday of each month, which is the set schedule.
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels)。
+For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels).
 
 ## Architecture
 

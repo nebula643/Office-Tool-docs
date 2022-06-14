@@ -72,7 +72,7 @@ You MUST save the batch files using English name. Non-English characters is not 
 ConfigForISO.xml created by Office Tool Plus, make sure you are creating Office ISO with default configuration.
 :::
 
-For single edition of Office ISO (such as 32-bit)，we can create the batch file:
+For single edition of Office ISO (such as 32-bit), we can create the batch file:
 
 **Setup.bat:**
 

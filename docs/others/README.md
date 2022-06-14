@@ -138,13 +138,13 @@ deploy /addProduct O365ProPlusRetail
 | /removeProduct value | Uninstall product. | value: productID_language<br>Same as /addProduct |
 | /removeAll | Uninstall all products. |  |
 | /channel value | Set channel. | value: channel ID, [see more](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options#channel-attribute-part-of-add-element). |
-| /clientEdition value | Set architecture. | value: 32 or 64。 |
+| /clientEdition value | Set architecture. | value: 32 or 64. |
 | /migrateArch | Migrate architecture. |  |
 | /version value | Set Office version | value: Office version. |
 | /sourcePath value | Set source path. | value: path, support local or SMB path. |
-| /display value | Display office installation interface. | value: true (Visible)，false (Hidden) |
+| /display value | Display office installation interface. | value: true (Visible), false (Hidden) |
 | /acceptEULA | Accept EULA for users. |  |
-| /module value | Set installation module. | value: 0 or 1。<br>0: Office Deployment Tool, 1: Office Tool Plus. |
+| /module value | Set installation module. | value: 0 or 1.<br>0: Office Deployment Tool, 1: Office Tool Plus. |
 | /downloadFirst | Set install after download. |  |
 | /createShortcuts | Create desktop shortcuts. |  |
 
@@ -154,7 +154,7 @@ deploy /addProduct O365ProPlusRetail
 
 #### Deploy Office examples
 
-Deploy English edition of Office 2021 Pro Plus - Volume，excludes Access, Outlook, OneNote:
+Deploy English edition of Office 2021 Pro Plus - Volume, excludes Access, Outlook, OneNote:
 
 ``` batch
 deploy /addProduct ProPlus2021Volume_en-us_Access,Outlook,OneNote /channel PerpetualVL2021
