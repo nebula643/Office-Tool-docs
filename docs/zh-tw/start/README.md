@@ -32,7 +32,7 @@ Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](ht
 
 ::: warning 注意事項
 
-1. Office 文件轉換功能，可能無法相容 64 位元的 Office 版本，我們正在嘗試解決這個問題。在問題解決之前，請在 32 位元的 Office 中使用此功能。
+1. Office 文件轉換功能可能無法相容 64 位元的 Office 版本。
 2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
 
 :::
@@ -48,6 +48,7 @@ Office 授權不限於零售版或大量授權版，都可以同時存在。
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程式)
+├── Office Tool Plus.Console.exe (Console Helper)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files

@@ -32,8 +32,8 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 
 ::: warning 注意事项
 
-1. Office 文档转换功能可能无法兼容 64 位版本的 Office，我们将在以后尝试解决此问题。问题解决之前，请在 32 位的 Office 中使用此功能。
-2. Office Tool Plus 提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
+1. Office 文档转换功能可能无法兼容 64 位版本的 Office.
+2. Office Tool Plus 只提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
 
 :::
 
@@ -48,6 +48,7 @@ Office 许可证能够共存，而不只是零售版或者批量版本
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程序)
+├── Office Tool Plus.Console.exe (终端助手)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files
@@ -57,7 +58,7 @@ Office Tool
     ├── clean
     │   ├── x64 (64 位系统专用 Office 激活信息清除工具)
     │   └── x86 (32 位系统专用 Office 激活信息清除工具)
-    ├── preferences (Office 应用程序首选项相关数据，由微软提供)
+    ├── preferences (Office 应用程序首选项数据，由微软提供)
     └── Thunder (迅雷云加速开放平台相关文件)
 ```
 

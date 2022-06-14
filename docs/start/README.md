@@ -32,7 +32,7 @@ No matter what, Office Tool Plus is always your best helper.
 
 ::: warning Attention
 
-1. Office documents converter may not be capable with 64-bit of Office, we will try to fix this problem in future releases. Before this issue gets fixed, please only use this function on 32-bit of Office.
+1. Office documents converter may not be capable with 64-bit of Office.
 2. Office Tool Plus only provides activation management. You need to have a genuine license to activate your products.
 
 :::
@@ -48,6 +48,7 @@ You can install a volume license besides the existing activated retail license. 
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (main program)
+├── Office Tool Plus.Console.exe (Console Helper)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files
@@ -55,9 +56,9 @@ Office Tool
     ├── activate (OSPP and other relating files)
     │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
-    │   ├── x64 (Office Activation cleaner for x64 system)
-    │   └── x86 (Office Activation cleaner for x86 system)
-    ├── preferences (Office applications settings related data, provided by Microsoft)
+    │   ├── x64 (Office activation cleaner for x64 system)
+    │   └── x86 (Office activation cleaner for x86 system)
+    ├── preferences (Office applications preferences data, provided by Microsoft)
     └── Thunder (files related to Thunder download acceleration)
 ```
 
