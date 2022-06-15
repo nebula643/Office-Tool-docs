@@ -118,10 +118,6 @@ deploy 和 ospp 命令默认启用日志输出，您无需额外指定 /enableLo
 | /resetNotif | 重置通知，以便再次显示已经关闭了的通知 | |
 | /loadConfig value | 从 Web 路径加载 XML 配置文件 | value: 网址 |
 
-::: warning 注意
-Office Tool Plus V9 版本已移除 /getkey 命令，您可以从 [产品列表](https://www.coolhub.top/tech-articles/products.html) 中获取密钥。
-:::
-
 ### 部署命令
 
 deploy [options]

@@ -66,46 +66,30 @@ Office Tool Plus.Console 是一个命令列程式，正常情況下，透過  Of
 以下命令範例為啟動 Office Tool Plus 日誌輸出：
 
 ``` batch
-@echo off
-title Office Tool Plus - Console
-
-:: Make sure you have administrator permission.
-set "Apply=%*"
-cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
-
-:: Run commands.
 "Office Tool Plus.Console" /enableLog
 ```
 
 以下命令範例為啟動 Office 2021 線上安裝：
 
 ``` batch
-@echo off
-title Office Tool Plus - Console
-
-:: Make sure you have administrator permission.
-set "Apply=%*"
-cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
-
-:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
 如要進行離線安裝，建議您提前下載 Office 安裝文件，然後使用 */sourcePath* 參數以指定安裝文件的位置，並且使用 /version 指定 Office 安裝文件版本：
 
 ``` batch
-@echo off
-title Office Tool Plus - Console
-
-:: Make sure you have administrator permission.
-set "Apply=%*"
-cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
-
-:: Run commands.
 "Office Tool Plus.Console" deploy /addProduct ProPlus2021Volume_zh-cn_Access,Outlook,OneNote /channel PerpetualVL2021 /sourcePath "D:\Office Tool" /version 16.0.00000.00000
 ```
 
 以下命令範例為使用 KMS 啟用 Office 2021 專業增強版客戶端：
+
+``` batch
+"Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
+```
+
+建議您可先執行 deploy 命令，再執行 ospp 命令，以達到自動安裝和啟用的效果。
+
+以下命令範例為建立 batch 檔案：
 
 ``` batch
 @echo off
@@ -116,10 +100,9 @@ set "Apply=%*"
 cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
 
 :: Run commands.
+"Office Tool Plus.Console" /isoInstall
 "Office Tool Plus.Console" ospp /insLicID ProPlus2021Volume /sethst:kms.example.com /setprt:1688 /act
 ```
-
-建議您可先執行 deploy 命令，再執行 ospp 命令，以達到自動安裝和啟用的效果。
 
 ::: tip 提醒
 deploy 和 ospp 命令預設啟用記錄檔輸出，您無須再額外設定/enableLog 參數。deploy 和 ospp 命令不可與其他命令混用，否則將無法識別。
@@ -133,10 +116,6 @@ deploy 和 ospp 命令預設啟用記錄檔輸出，您無須再額外設定/ena
 | /getKey value | 取得產品預設金鑰 | value: 產品識別碼。 |
 | /resetNotif | 重設通知以再次顯示已關閉的通知。 | |
 | /loadConfig value | 從網際網路載入 XML 配置檔案。 | value: 網址。 |
-
-::: warning 注意
-Office Tool Plus 9 已不再支援 /getkey 命令，但您仍然可從 [產品列表](https://www.coolhub.top/tech-articles/products.html) 取得金鑰。
-:::
 
 ### 部署指令
 

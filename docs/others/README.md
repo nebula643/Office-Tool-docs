@@ -118,10 +118,6 @@ The deploy and ospp commands enable logging by default, you do not need to speci
 | /resetNotif | Reset notifications to show closed notifications again. | |
 | /loadConfig value | Load XML config from web. | value: url. |
 
-::: warning Warning
-/getkey command was removed on V9, please visit [products information](https://www.coolhub.top/tech-articles/products.html) to get the keys.
-:::
-
 ### Deploy commands
 
 deploy [options]
