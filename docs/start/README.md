@@ -15,16 +15,33 @@ The following products are supported:
 
 No matter what, Office Tool Plus is always your best helper.
 
+## Download
+
+Download Office Tool Plus from:
+
+- [Office Tool Plus official website](http://otp.landian.vip/)
+
+Differences between the versions:
+
+- Includes runtime: Includes .NET Runtime, you can run Office Tool Plus without .NET Runtime installation.
+- Normal: Only Office Tool Plus and base components.
+
+> We recommend you to download Office Tool Plus which includes runtime.
+
+### Unpack
+
+Extract Office Tool Plus to a normal location, such as desktop. **Do NOT run Office Tool Plus without unpacking**.
+
 ## Features
 
 - Create Office installation configuration. The config can be exported to local, or imported from local or web.
 - Download Office, supporting `ALL` Office channels and `ALL` Office languages.
-- Install Office or modify the existing Office, such as adding new products and applications, or uninstalling products and applications.
+- Install Office or modify the existing Office, such as adding new products, languages and applications, or uninstalling products and applications.
 - Create Office ISO, supports default installation config and silent installation config.
 - Activate Office. Support online activation, phone activation and KMS activation.
 - Support Office activation management, including license management, key management and KMS management.
 - Change Office update channel, support upgrading/downgrading Office without reinstalling Office.
-- Remove Office. Force remove Office while it can’t be uninstalled in normal way, support Office from Office 2003 to the latest Office version.
+- Remove Office, force remove Office when it can’t be uninstalled in normal way, supports all version of Office.
 - Integrated Office tools, including resetting settings, fixing Office problems.
 - Convert Office documents, based on Office COM. it's fast and stable.
 - Personalize theme, you can build your special Office Tool Plus.
@@ -35,12 +52,6 @@ No matter what, Office Tool Plus is always your best helper.
 1. Office documents converter may not be capable with 64-bit of Office.
 2. Office Tool Plus only provides activation management. You need to have a genuine license to activate your products.
 
-:::
-
-::: details About convert retail to volume edition
-Office license can coexist now, which means we can have more than one license at a time.
-
-You can install a volume license besides the existing activated retail license. If you activate the volume license, Office will show both the retail activation information and the volume activation information.
 :::
 
 ## Components and Structure
@@ -64,4 +75,4 @@ Office Tool
 
 Usually, Office Tool Plus will download the needed components and keep it the latest version automatically.
 
-If some of the components are lost or cannot be downloaded automatically, we suggest you to re-download Office Tool Plus to fix this problem.
+If some of the components are lost or cannot be downloaded automatically, we suggest you to re-download Office Tool Plus to fix this problems.

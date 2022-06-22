@@ -112,14 +112,14 @@ The module can do most of the features of the Office Deployment Tool, and also f
 
 The following content shows the differences between them.
 
-| Functions | Office Deployment Tool | Office Tool Plus |
-| :-------  | :--------------------- | :--------------- |
-| Update deadline.                   | ✓ | × |
-| Force upgrade Office.              | ✓ | × |
+| Functions          | Office Deployment Tool | Office Tool Plus |
+| :----------------- | :--------------------- | :--------------- |
+| Update deadline.                                       | ✓ | × |
+| Force upgrade Office.                                  | ✓ | × |
 | Remove existing MSI versions of Office.                | ✓ | × |
 | Install the same language as the previous MSI version. | ✓ | × |
-| Use Office internal channels       | × | ✓ |
-| Install internal products          | × | ✓ |
+| Use Office internal channels                           | × | ✓ |
+| Install internal products                              | × | ✓ |
 
 We recommend that Office Deployment Tools be used first. If there is a problem with Office Deployment Tools that cannot be fixed, or if there are special needs, use Office Tool Plus as installation module.
 

@@ -71,7 +71,6 @@ module.exports = {
 				sidebar: {
 					'/start/': [
 						'',
-						'download',
 						'requirement'
 					],
 					'/deploy/': [
@@ -112,7 +111,7 @@ module.exports = {
 					{ text: '官方博客', link: 'https://www.coolhub.top' },
 					{
 						text: '群组', items: [
-							{ text: 'QQ: 713837704', link: 'https://otp.landian.vip/grouplink/qq.html' },
+							{ text: 'QQ | 微信公众号', link: 'https://otp.landian.vip/grouplink/qq.html' },
 							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
 						]
 					}
@@ -120,8 +119,7 @@ module.exports = {
 				sidebar: {
 					'/zh-cn/start/': [
 						'',
-						'requirement',
-						'download'
+						'requirement'
 					],
 					'/zh-cn/deploy/': [
 						'',

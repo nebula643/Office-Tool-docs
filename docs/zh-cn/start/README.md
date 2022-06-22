@@ -15,6 +15,23 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 
 无论你是个体还是团队，Office Tool Plus 都是你的得力小助手。
 
+## 下载
+
+下载 Office Tool Plus:
+
+- [Office Tool Plus 官方网站](http://otp.landian.vip/)
+
+版本区别：
+
+- 包含框架版本：包含 .NET Runtime，可以在不安装 .NET Runtime 的情况下直接运行 Office Tool Plus.
+- 普通版本：仅包含 Office Tool Plus 以及基本组件。
+
+> 推荐下载包含框架的版本，方便使用。
+
+### 解压
+
+下载完成后，请将 Office Tool Plus 解压到一个合适的位置，例如桌面。**请勿在压缩包内直接双击运行 Office Tool Plus**.
+
 ## 功能
 
 - 创建 Office 安装配置，支持导出到本地、从本地或网络位置导入。
@@ -35,12 +52,6 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 1. Office 文档转换功能可能无法兼容 64 位版本的 Office.
 2. Office Tool Plus 只提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
 
-:::
-
-::: details 关于零售、批量互转
-Office 许可证能够共存，而不只是零售版或者批量版本
-
-在零售版的基础上再安装批量版许可证，并且将其都激活，Office 将会同时显示零售版激活信息和批量版激活信息。
 :::
 
 ## 组件与结构
