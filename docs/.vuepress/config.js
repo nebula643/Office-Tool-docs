@@ -60,7 +60,8 @@ module.exports = {
 					{ text: 'Start', link: '/start/' },
 					{ text: 'Deploy', link: '/deploy/' },
 					{ text: 'Activate', link: '/activate/' },
-					{ text: 'More', link: '/others/toolbox' },
+					{ text: 'More', link: '/others/' },
+					{ text: 'FAQ', link: '/faq/' },
 					{ text: 'Blog (Chinese)', link: 'https://www.coolhub.top' },
 					{
 						text: 'Group', items: [
@@ -75,18 +76,26 @@ module.exports = {
 					],
 					'/deploy/': [
 						'',
-						'configuration-options',
-						'create-iso',
-						'faq'
+						'basic-settings',
+						'advanced-settings',
+						'create-iso'
 					],
 					'/activate/': [
 						'',
-						'faq'
+						'activate-steps'
 					],
 					'/others/': [
+						'',
 						'toolbox',
 						'converter',
-						''
+						'settings',
+						'commands'
+					],
+					'/faq/': [
+						'',
+						'application',
+						'deploy',
+						'activation'
 					],
 					'/': [
 						''
@@ -107,7 +116,8 @@ module.exports = {
 					{ text: '入门', link: '/zh-cn/start/' },
 					{ text: '部署', link: '/zh-cn/deploy/' },
 					{ text: '激活', link: '/zh-cn/activate/' },
-					{ text: '更多', link: '/zh-cn/others/toolbox' },
+					{ text: '更多', link: '/zh-cn/others/' },
+					{ text: '常见问题', link: '/zh-cn/faq/' },
 					{ text: '官方博客', link: 'https://www.coolhub.top' },
 					{
 						text: '群组', items: [
@@ -123,18 +133,26 @@ module.exports = {
 					],
 					'/zh-cn/deploy/': [
 						'',
-						'configuration-options',
-						'create-iso',
-						'faq'
+						'basic-settings',
+						'advanced-settings',
+						'create-iso'
 					],
 					'/zh-cn/activate/': [
 						'',
-						'faq'
+						'activate-steps'
 					],
 					'/zh-cn/others/': [
+						'',
 						'toolbox',
 						'converter',
-						''
+						'settings',
+						'commands'
+					],
+					'/zh-cn/faq/': [
+						'',
+						'application',
+						'deploy',
+						'activation'
 					],
 					'/zh-cn/': [
 						''

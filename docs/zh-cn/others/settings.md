@@ -1,0 +1,36 @@
+# Application Settings
+
+默认情况下，Office Tool Plus 自动适配系统语言和深色主题模式。
+
+如果系统语言无法匹配，默认使用英语（美国）作为显示语言。
+
+## 保存设置到本地
+
+如果需要保存 Office Tool Plus 的设置，例如语言、主题或者背景图设置，请勾选“保存设置到本地”选项。
+
+## Background
+
+模糊效果和亚克力效果仅在 Windows 10 和 Windows 11 中可用。
+
+你可以设置本地文件为背景图，支持 PNG, JPG 和 BMP.
+
+如果你需要设置网络图片为背景图，请使用 `/setImage` 命令，[获取命令的更多信息](/zh-cn/others/commands.html#程序内命令)。
+
+## 语言显示格式
+
+默认情况下，Office Tool Plus 显示语言为本地格式，例如英语显示为 English (United States).
+
+- 默认：不进行任何更改，按照默认的设置显示。
+- 本地名称：显示语言的本地名称，例如英语是 English，德语是：Deutsch
+- 英文名称：显示语言的英文名称，例如中文是 Chinese，德语是：German
+- 本地化名称：按照系统语言设置显示，例如你的系统语言是中文，那么所有的语言都显示为中文。
+
+本地名称、英文名称以及本地化名称由 Windows 提供数据，不同版本的 Windows 显示结果可能不同。
+
+::: tip 提示
+要更改为默认值，你需要重新启动应用程序才能生效。
+:::
+
+## 高级功能
+
+启用此选项后，Office Tool Plus 将会加载 Office 内部通道和内部产品，例如 Dogfood 通道和 Mondo 2016 产品。

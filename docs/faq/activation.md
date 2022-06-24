@@ -1,4 +1,4 @@
-# FAQ
+# Activation Questions
 
 ## The Software Licensing Service reported that license consumption failed
 

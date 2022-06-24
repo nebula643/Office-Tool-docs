@@ -1,4 +1,4 @@
-# Configuration options
+# Basic settings
 
 ## Products
 
@@ -24,25 +24,6 @@ If you want to use KMS or MAK to activate Office, install volume license product
 | Microsoft 365 Business            | O365BusinessRetail     |
 :::
 
-## Languages
-
-When you click `Add Language`, Office Tool Plus will match the current system language. If the match is incorrect or you need to select another language, change it manually.
-
-You can add one or more languages that you want. The first language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
-
-If you do not add a language, Office will automatically match the system language when installing, or fall back to the language specified in *Advanced settings - Installation settings - Fallback language* if the system language cannot be matched.
-
-If you check "Deploy proofing tools only", the language will be installed as proofing tools.
-
-### Language Type
-
-| Type                           | Description                                                                                                   |
-| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| Full                           | The language pack includes display language and proofing tools.                                               |
-| Partial                        | The language pack includes display language for some Office applications and includes proofing tools.         |
-| Partial without proofing tools | The language pack includes display language for some Office applications but does not include proofing tools. |
-| Proofing tools                 | The language pack only include spell checker.                                                                 |
-
 ## Applications
 
 The application will display different items depending on the products you selected.
@@ -55,27 +36,28 @@ When you select a product such as Visio or Project, it does not appear in the li
 
 For information on products and applications, you can view [Office Products Information](https://www.coolhub.top/tech-articles/products.html).
 
-## Channels
+## Languages
 
-In most cases, it is sufficient to select either the `Current Channel` or the `Semi-Annual Enterprise Channel`, the differences between which are listed in the following table.
+When you click *Add Language*, Office Tool Plus will match the current system language. If the match is incorrect or you need to select another language, change it manually.
 
-| Channel                          | Release frequency                                 | Feature updates                     |
-| :------------------------------- | :------------------------------------------------ | :---------------------------------- |
-| Current Channel                  | At least once a month (likely more often).        | Same as release frequency.          |
-| Semi-Annual Enterprise Channel   | Once a month, on the second Tuesday of the month. | Twice a year (in January and July). |
-| Monthly Enterprise Channel       | Once a month, on the second Tuesday of the month. | Same as release frequency.          |
-| Office 2019 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
-| Office 2021 Perpetual Enterprise | Once a month, on the second Tuesday of the month. | None.                               |
+You can add one or more languages that you want. The first full type of language in the list determines the Shell UI culture, including shortcuts, right-click context menus, and tooltips. If you decide that you want to change the Shell UI language after an initial installation, you have to uninstall and reinstall Office.
 
-> For Office 2019/2021 Volume License products, the perpetual enterprise channel is the dedicated channel.
+If you do not add a language, Office will automatically match the system language, or fall back to the language specified in *Advanced settings - Installation settings - Fallback language* if the system language cannot be matched.
 
-All the channels listed in the table are stable channels.
+If you check *Deploy proofing tools only*, the language will be installed as proofing tools.
 
-Each channel releases security updates (if needed) on the second Tuesday of each month, which is the set schedule.
+### Language Type
 
-For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels).
+| Type                           | Description                                                                                                   |
+| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
+| Full                           | The language pack includes display language and proofing tools.                                               |
+| Partial                        | The language pack includes display language for some Office applications and includes proofing tools.         |
+| Partial without proofing tools | The language pack includes display language for some Office applications but does not include proofing tools. |
+| Proofing tools                 | The language pack only include spell checker.                                                                 |
 
-## Architecture
+## Deploy settings
+
+### Architecture
 
 **In general, we recommend that you install the 32-bit version of Office**, 64-bit is the right choice when:
 
@@ -87,7 +69,27 @@ For more information, see [Overview of update channels for Microsoft 365 Apps](h
 
 For more information, see [Choose between the 64-bit or 32-bit version of Office](https://support.microsoft.com/en-us/office/choose-between-the-64-bit-or-32-bit-version-of-office-2dee7807-8f95-4d0c-b5fe-6c6f49b8d261).
 
-## Deployment mode
+### Channel
+
+In most cases, it is sufficient to select either the `Current Channel` or the `Semi-Annual Enterprise Channel`, the differences between which are listed in the following table.
+
+| Channel                          | Channel ID        | Release frequency                                 | Feature updates                     |
+| :------------------------------- | :---------------: | :------------------------------------------------ | :---------------------------------- |
+| Current Channel                  | Current           | At least once a month (likely more often).        | Same as release frequency.          |
+| Semi-Annual Enterprise Channel   | SemiAnnual        | Once a month, on the second Tuesday of the month. | Twice a year (in January and July). |
+| Monthly Enterprise Channel       | MonthlyEnterprise | Once a month, on the second Tuesday of the month. | Same as release frequency.          |
+| Office 2019 Perpetual Enterprise | PerpetualVL2019   | Once a month, on the second Tuesday of the month. | None.                               |
+| Office 2021 Perpetual Enterprise | PerpetualVL2021   | Once a month, on the second Tuesday of the month. | None.                               |
+
+> For Office 2019/2021 Volume License products, the perpetual enterprise channel is the dedicated channel.
+
+All the channels listed in the table are stable channels.
+
+Each channel releases security updates (if needed) on the second Tuesday of each month, which is the set schedule.
+
+For more information, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/overview-update-channels).
+
+### Deployment mode
 
 | Mode            | Description                                                                               |
 | :-------------- | :---------------------------------------------------------------------------------------- |
@@ -100,13 +102,13 @@ The Office installation contains Office, Visio and Project, provided by Microsof
 
 To create an ISO file, you must first download the Office installation.
 
-## Installation module
+### Installation module
 
-### Office Deployment Tool
+#### Office Deployment Tool
 
 The Office Deployment Tool is an official Microsoft tool for deploying Office. Provides full support for deploying Office.
 
-### Office Tool Plus
+#### Office Tool Plus
 
 The module can do most of the features of the Office Deployment Tool, and also features that the Office Deployment Tool cannot do.
 
@@ -135,7 +137,11 @@ The following content shows the differences between them.
 | Office Tool Plus       | ✓ | × | × | ✓ |
 | Office Deployment Tool | × | × | × | × |
 
+> Thunder is a built-in application, you don't need to install it on your system.
+
 When Office Tool Plus cannot find the Thunder component, will fall back to Office Tool Plus as the download engine.
+
+If you want to change the location where to save the files, please modify [source path](/deploy/advanced-settings.html#source-path).
 
 ### UA
 
@@ -156,39 +162,3 @@ You can click on the version number to delete an installation, or click on the l
 If the installation shows an error, you should check and fix the problems before deploying.
 
 Clicking `Reset` clears the information and resets the source path to default value, and no longer uses the local source for deployment.
-
-## Office version
-
-This setting is located in *Advanced settings - Installation settings*.
-
-The latest available version of Office is installed by default.
-
-If you need to install a historical version of Office, you can click the Refresh button on the right to get all available versions of Office.
-
-If you have downloaded Office installations, the versions of all Office installations under the corresponding channel are displayed here.
-
-## Source path
-
-This setting is located in *Advanced settings - Installation settings*.
-
-By default, the Office deployment tool fetches the Office installation files from the Office CDN. If you have the Office installation, you should select the file in the `Installation files manage` instead of writing the path here.
-
-If you are using SMB to share Office installation, you can write the SMB path here, and you should also specify the version of Office.
-
-When using an existing installation, you should also make sure that the channel corresponds to the Office installation.
-
-**In download mode, this property is used to define where to save the files.**
-
-## Application preferences
-
-`Application preferences are data provided by Microsoft, these texts are machine translated and may contain some grammatical errors.`
-
-The function allow you defines application preferences for Office Apps, including VBA Macro notifications, default file locations, and default file format.
-
-You can apply new application preferences to client computers that already have Office installed. Click "Applying preferences for Office applications" in the "View XML code" submenu.
-
-The app preferences are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted.
-
-## Other options
-
-The other options are described in detail in the [Microsoft docs](https://docs.microsoft.com/en-us/deployoffice/office-deployment-tool-configuration-options), they are used in the same way.

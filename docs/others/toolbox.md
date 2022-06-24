@@ -20,7 +20,7 @@ If Office Tool Plus detects a vlmcs component, it uses vlmcs for testing, includ
 
 ## Remove Office
 
-Support for removing all versions of Office, including 2003 - 2021 and 365.
+Support for removing all versions of Office.
 
 If something went wrong, you can try again later, or delete the files manually.
 

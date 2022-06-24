@@ -1,4 +1,4 @@
-# FAQ
+# Deploy Questions
 
 ## Install Office on Windows 7 or Windows 8
 

@@ -11,6 +11,6 @@ features:
 - title: Practical
   details: Born for Office deployments.
 - title: Powerful
-  details: Not only for install, you can do much more.
+  details: Full support of customize.
 footer: GPL-3.0 Licensed | Copyright © 2016 - 2022 Yerong All Rights Reserved.
 ---

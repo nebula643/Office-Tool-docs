@@ -80,24 +80,6 @@ You can only apply the port, or apply the port with the host address. If the KMS
 
 This function will delete all Office licenses and keys on your system. Your Office Activation status will be lost. And if you don't install new licenses, Office applications will report an error at the first time it starts.
 
-## Activation steps
-
-### Key activation (online activation)
-
-Type in your Office product key in "Key management" and click "install key", and click "activate".
-
-If it reports a "product SKU not found" error,  install the correct license first.
-
-### Phone activation (offline activation)
-
-After you make sure you have installed the right key, click "view installation ID" in the menu of "key management", and install the CID you finally get.
-
-If it reports a "product SKU not found" error,  install the correct license first.
-
-### KMS activation (Internet connection required)
-
-Choose and install a volume license in "license management". Then set a KMS host in "KMS management". Click on "set KMS host" and then click "activate".
-
 ## Display activation information
 
 This function will show the information of all the keys and licenses installed on your computer, including SKU ID, key information, and license(s) status. If you use KMS licenses, it will also show the information of the KMS host.
