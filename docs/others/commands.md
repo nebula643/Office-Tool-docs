@@ -20,10 +20,13 @@ These commands can only be used in command box.
 
 These commands can only be used in command-line.
 
-| Command              | Description                                 |                                                      |
-| :--                  | :--                                         | :--                                                  |
-| /isoInstall          | Read the ISO config and start installation. | You must create a ISO and mount it first, make sure the ISO contains *ConfigForISO.xml*, or the command will not invoke.
-| /enableHWAcc *value* | Enable hardware acceleration.               | *value*: *true* or *false*, default value is *true*. |
+| Command                | Description                                 |                                                      |
+| :--                    | :--                                         | :--                                                  |
+| /isoInstall            | Read the ISO config and start installation. | You must create a ISO and mount it first, make sure the ISO contains *ConfigForISO.xml*, or the command will not invoke.
+| /loadConfig *value*    | Read a config and start installation.       | *values*: path to XML config. |
+| /sourcePath *value*    | Override the source path of config.         | *value*: path of the source. The command should be used with the `/loadConfig` command. |
+| /clientEdition *value* | Override the architecture of config.        | *value*: 32 or 64. The command should be used with the `/loadConfig` command. |
+| /enableHWAcc *value*   | Enable hardware acceleration.               | *value*: *true* or *false*, default value is *true*. |
 
 ## Deploy commands
 

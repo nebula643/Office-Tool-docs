@@ -22,7 +22,10 @@
 
 | 命令 | 说明 |  |
 | :-- | :-- | :-- |
-| /isoInstall | 读取 ISO 配置文件并启动安装程序。 | 你必须创建 Office ISO，确保 ISO 内含 ConfigForISO.xml，挂载后再执行命令。 |
+| /isoInstall | 读取 ISO 配置文件并启动安装程序。 | 你必须创建 Office ISO，确保 ISO 内含 ConfigForISO.xml，挂载后再执行命令 |
+| /loadConfig *value* | 读取 XML 配置文件并启动安装程序。 | *values*: XML 文件路径 |
+| /sourcePath *value* | 覆写 XML 配置文件中的源路径属性，该命令需配合 `/loadConfig` 命令使用 |
+| /clientEdition *value* | 覆写 XML 配置文件中的体系结构属性，*value*: 32 或 64，该命令需配合 `/loadConfig` 命令使用 |
 | /enableHWAcc *value* | 启用硬件加速 | *value*: *true* 或 *false*，默认为 *true* |
 
 ## 部署命令

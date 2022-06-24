@@ -1,4 +1,4 @@
-# Application Settings
+# 应用程序设置
 
 默认情况下，Office Tool Plus 自动适配系统语言和深色主题模式。
 
@@ -8,7 +8,7 @@
 
 如果需要保存 Office Tool Plus 的设置，例如语言、主题或者背景图设置，请勾选“保存设置到本地”选项。
 
-## Background
+## 背景
 
 模糊效果和亚克力效果仅在 Windows 10 和 Windows 11 中可用。
 
