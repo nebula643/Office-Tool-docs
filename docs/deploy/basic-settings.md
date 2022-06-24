@@ -6,7 +6,7 @@ If you have a genuine Office license, install your own purchased version of Offi
 
 If you want to use KMS or MAK to activate Office, install volume license products, such as Office 2019 Volume License or Office 2021 Volume License.
 
-> Not sure if you have a genuine Office license? Login your personal account [here](https://account.microsoft.com/services/) or login your enterprise account [here](https://portal.office.com/account/?ref=MeControl#subscriptions).
+> Not sure if you have a genuine Office license? Login your [personal account](https://account.microsoft.com/services/) or your [enterprise account](https://portal.office.com/account/?ref=MeControl#subscriptions) to check.
 
 ::: details Office 365 Plan
 | Office 365 Plan                   | Product ID             |
@@ -48,12 +48,12 @@ If you check *Deploy proofing tools only*, the language will be installed as pro
 
 ### Language Type
 
-| Type                           | Description                                                                                                   |
-| :----------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| Full                           | The language pack includes display language and proofing tools.                                               |
-| Partial                        | The language pack includes display language for some Office applications and includes proofing tools.         |
-| Partial without proofing tools | The language pack includes display language for some Office applications but does not include proofing tools. |
-| Proofing tools                 | The language pack only include spell checker.                                                                 |
+| Type                           | Description                                                                                 |
+| :----------------------------- | :------------------------------------------------------------------------------------------ |
+| Full                           | Includes display language and proofing tools.                                               |
+| Partial                        | Includes display language for some Office applications and includes proofing tools.         |
+| Partial without proofing tools | Includes display language for some Office applications but does not include proofing tools. |
+| Proofing tools                 | Only include spell checker.                                                                 |
 
 ## Deploy settings
 
@@ -73,13 +73,13 @@ For more information, see [Choose between the 64-bit or 32-bit version of Office
 
 In most cases, it is sufficient to select either the `Current Channel` or the `Semi-Annual Enterprise Channel`, the differences between which are listed in the following table.
 
-| Channel                          | Channel ID        | Release frequency                                 | Feature updates                     |
-| :------------------------------- | :---------------: | :------------------------------------------------ | :---------------------------------- |
-| Current Channel                  | Current           | At least once a month (likely more often).        | Same as release frequency.          |
-| Semi-Annual Enterprise Channel   | SemiAnnual        | Once a month, on the second Tuesday of the month. | Twice a year (in January and July). |
-| Monthly Enterprise Channel       | MonthlyEnterprise | Once a month, on the second Tuesday of the month. | Same as release frequency.          |
-| Office 2019 Perpetual Enterprise | PerpetualVL2019   | Once a month, on the second Tuesday of the month. | None.                               |
-| Office 2021 Perpetual Enterprise | PerpetualVL2021   | Once a month, on the second Tuesday of the month. | None.                               |
+| Channel                          | Channel ID        | Release frequency                          | Feature updates            |
+| :------------------------------- | :---------------: | :----------------------------------------- | :------------------------- |
+| Current Channel                  | Current           | At least once a month (likely more often). | Same as release frequency. |
+| Semi-Annual Enterprise Channel   | SemiAnnual        | On the second Tuesday of the month.        | January and July.          |
+| Monthly Enterprise Channel       | MonthlyEnterprise | On the second Tuesday of the month.        | Same as release frequency. |
+| Office 2019 Perpetual Enterprise | PerpetualVL2019   | On the second Tuesday of the month.        | None.                      |
+| Office 2021 Perpetual Enterprise | PerpetualVL2021   | On the second Tuesday of the month.        | None.                      |
 
 > For Office 2019/2021 Volume License products, the perpetual enterprise channel is the dedicated channel.
 

@@ -12,9 +12,9 @@ Automatic operation: Rebuild activation token, you can find the option in the To
 
 ---
 
-Manual operation: Stop `Software Protection` service, delete dat files on `C:\Windows\System32\spp\store\2.0` (On Windows Insider, the folder name is store_test). Then retry to activate Office.
+Manual operation: Stop `Software Protection` service, delete dat files on `C:\Windows\System32\spp\store\2.0` (on Windows Insider, the folder name is store_test). Then retry to activate Office.
 
-After installed Office licenses, wait three minutes. Then continue your operation.
+After installed Office licenses, wait three minutes, then continue your operation.
 
 **If the problem is not resolved, you may need to try again.**
 
