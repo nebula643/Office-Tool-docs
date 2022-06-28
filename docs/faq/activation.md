@@ -23,3 +23,16 @@ After installed Office licenses, wait three minutes, then continue your operatio
 Error code: 0x8004E108
 
 Solution is same as the previous item.
+
+## The data is invalid (0x8007000D)
+
+Make sure:
+
+- Your system time is correct.
+- The KMS host you are using is working fine. [How to test?](/others/toolbox.html#check-kms-status)
+
+Then do the following things:
+
+- Reset Software Protection service, you can find the option on toolbox page.
+- Set KMS host and port, the default port is 1688.
+- Try to activate again.
