@@ -4,7 +4,21 @@ module.exports = {
 	description: 'Official Office Tool Plus documentation.',
 	head: [
 		['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-		['link', { rel: 'icon', href: '/assets/img/logo.ico' }]
+		['link', { rel: 'icon', href: '/assets/img/logo.ico' }],
+		[
+			'script',
+			{
+				async: true,
+				src: 'https://www.googletagmanager.com/gtag/js?id=G-K4SGXHF07B',
+			}
+		],
+		[
+			'script',
+			{},
+			[
+				"window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-K4SGXHF07B');",
+			]
+		]
 	],
 	locales: {
 		'/': {
@@ -16,6 +30,11 @@ module.exports = {
 			lang: 'zh-CN',
 			title: 'Office Tool Plus Docs',
 			description: 'Office Tool Plus 官方帮助文档。'
+		},
+		'/zh-tw/': {
+			lang: 'zh-TW',
+			title: 'Office Tool Plus Docs',
+			description: 'Office Tool Plus 協助文件'
 		}
 	},
 	themeConfig: {
@@ -42,6 +61,7 @@ module.exports = {
 					{ text: 'Deploy', link: '/deploy/' },
 					{ text: 'Activate', link: '/activate/' },
 					{ text: 'More', link: '/others/' },
+					{ text: 'FAQ', link: '/faq/' },
 					{ text: 'Blog (Chinese)', link: 'https://www.coolhub.top' },
 					{
 						text: 'Group', items: [
@@ -52,23 +72,30 @@ module.exports = {
 				sidebar: {
 					'/start/': [
 						'',
-						'download',
 						'requirement'
 					],
 					'/deploy/': [
 						'',
-						'deploy',
-						'create-iso',
-						'faq'
+						'basic-settings',
+						'advanced-settings',
+						'create-iso'
 					],
 					'/activate/': [
 						'',
-						'faq'
+						'activate-steps'
 					],
 					'/others/': [
+						'',
 						'toolbox',
 						'converter',
-						''
+						'settings',
+						'commands'
+					],
+					'/faq/': [
+						'',
+						'application',
+						'deploy',
+						'activation'
 					],
 					'/': [
 						''
@@ -89,12 +116,12 @@ module.exports = {
 					{ text: '入门', link: '/zh-cn/start/' },
 					{ text: '部署', link: '/zh-cn/deploy/' },
 					{ text: '激活', link: '/zh-cn/activate/' },
-					{ text: '更多', link: '/zh-cn/others/toolbox' },
+					{ text: '更多', link: '/zh-cn/others/' },
+					{ text: '常见问题', link: '/zh-cn/faq/' },
 					{ text: '官方博客', link: 'https://www.coolhub.top' },
 					{
 						text: '群组', items: [
-							{ text: 'QQ: 481262749', link: 'https://otp.landian.vip/grouplink/qq.html' },
-							{ text: 'WeChat', link: 'https://otp.landian.vip/grouplink/wechat.html' },
+							{ text: 'QQ | 微信公众号', link: 'https://otp.landian.vip/grouplink/qq.html' },
 							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
 						]
 					}
@@ -102,23 +129,30 @@ module.exports = {
 				sidebar: {
 					'/zh-cn/start/': [
 						'',
-						'requirement',
-						'download'
+						'requirement'
 					],
 					'/zh-cn/deploy/': [
 						'',
-						'deploy',
-						'create-iso',
-						'faq'
+						'basic-settings',
+						'advanced-settings',
+						'create-iso'
 					],
 					'/zh-cn/activate/': [
 						'',
-						'faq'
+						'activate-steps'
 					],
 					'/zh-cn/others/': [
+						'',
 						'toolbox',
 						'converter',
-						''
+						'settings',
+						'commands'
+					],
+					'/zh-cn/faq/': [
+						'',
+						'application',
+						'deploy',
+						'activation'
 					],
 					'/zh-cn/': [
 						''
@@ -128,22 +162,25 @@ module.exports = {
 			'/zh-tw/': {
 				selectText: '選擇語言',
 				label: '繁體中文 (台灣)',
-				editLinkText: '在 GitHub 上编辑此页',
+				editLinkText: '在 GitHub 編輯此頁',
 				serviceWorker: {
 					updatePopup: {
-						message: "发现新内容可用.",
-						buttonText: "刷新"
+						message: "發現新版本可用",
+						buttonText: "重新載入"
 					}
 				},
 				nav: [
-					{ text: '入门', link: '/zh-tw/start/' },
+					{ text: '入門', link: '/zh-tw/start/' },
 					{ text: '部署', link: '/zh-tw/deploy/' },
-					{ text: '激活', link: '/zh-tw/activate/' },
+					{ text: '啟用', link: '/zh-tw/activate/' },
 					{ text: '更多', link: '/zh-tw/others/toolbox' },
-					{ text: '官方博客', link: 'https://www.coolhub.top' },
+					{ text: '作者Blog', link: 'https://www.coolhub.top' },
+					{ text: 'Cotpear', link: 'https://www.cotpear.com?utm_source=docs-otp-web' },
 					{
-						text: '群组', items: [
-							{ text: 'Telegram', link: 'https://otp.landian.vip/grouplink/telegram.html' }
+						text: '社群', items: [
+							{ text: 'Telegram 華人群組', link: 'https://otp.landian.vip/grouplink/telegram.html' },
+							{ text: 'Telegram 台灣頻道', link: 'https://t.me/ot_channel_tw' },
+							{ text: 'OTP 台灣管理團隊', link: 'https://go.cotpear.com/otp-tw' },
 						]
 					}
 				],
@@ -155,7 +192,7 @@ module.exports = {
 					],
 					'/zh-tw/deploy/': [
 						'',
-						'deploy',
+						'configuration-options',
 						'create-iso',
 						'faq'
 					],

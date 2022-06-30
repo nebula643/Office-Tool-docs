@@ -1,75 +1,109 @@
-# 创建 Office ISO
+# Create Office ISO
 
-创建 Office ISO 文件允许你与其他人分享 Office，或者用于大批量、多次安装。
+Creating Office ISO files allows you to share Office with others, or use it for multiple installations.
 
-为了获得更好的体验，请确保你始终从[官方网站](https://otp.landian.vip/)下载了最新的 with runtime 版本的 Office Tool Plus，有时候我们会更新 Runtime 文件夹和 RunMe.bat 文件，这些文件不会随着 Office Tool Plus 的自动升级而更新，需要手动重新下载。
+For a better experience, please make sure you always download the latest version of Office Tool Plus which `includes runtime`.
 
-我们建议您一个月更新一次 Office ISO，与 Office 更新频率保持一致，每个月的第二个星期二为 Office 固定的补丁日。
+We recommend that you update your Office ISO once a month, in line with the Office update frequency.
 
-::: tip 提示
-使用 with runtime 版本的 Office Tool Plus 允许你在没有安装 .NET Desktop Runtime 的情况下直接运行程序，并且还可以设置参数，这对大批量安装非常有帮助。
+Anyway, it's suggested to test the ISO file by yourself when finished creating.
+
+::: tip Tip
+Using the version of Office Tool Plus which includes runtime allows you to run without the .NET Desktop Runtime installed, which is very helpful for multiple installations.
 :::
 
-## 下载 Office 安装文件
+## Create Office ISO with default configuration
 
-确保自己使用的版本无误后，双击 RunMe.bat 打开 Office Tool Plus.
+Open Office Tool Plus, on deploy page, change deployment mode to `Create ISO file`, also check `Download first, then deploy`.
 
-在部署页面，切换部署模式为“下载”。
+Add products as you want, such as Office Pro Plus 2021 - Volume License.
 
-添加产品，按需选择，比如 Office 2021 专业增强版 - 批量版。
+Add languages as you want, if not, you need to connected to Internet when installing Office.
 
-添加语言，按需选择，如果一个都不加，安装的时候依然需要联网。
+Change other settings if needed.
 
-根据需要修改体系结构和通道设置，其他设置可以按需更改。
+**To verify the Office installation, check "Verify Office installations files after download." on "Download settings"**.
 
-确认所有设置无误后，点击“开始部署”。待下载完成后，继续下一步操作。
-
-## 创建 Office ISO 文件
-
-下载完成后，确认“安装文件管理”中能加载并正确识别 Office 安装包信息。
-
-切换部署模式为“创建 ISO 文件”，在这三种方式中，你可以选择任意一种方式进行：
-
-::: details 创建包含默认配置的 Office ISO
-保持刚才的设置不变，点击“开始部署”，选择文件保存路径以及文件名即可。
-
-此模式下的 Office Tool Plus 会自动适配安装文件路径，因此你无须清空或者更改源路径属性。
+::: tip Tip
+If you want to download Office for another version of Windows, for example, to download Office on Windows 10 for Windows 7, change *Download Settings - UA* to the corresponding system version.
 :::
 
-::: details 创建不含默认配置的 Office ISO
-按下 F5，或者手动清空产品和语言，点击“开始部署”，选择文件保存路径以及文件名即可。
+Click "start deploy".
+
+The Office ISO created using this method contains the default configuration and asks the user to start the Office installation when opening Office Tool Plus.
+
+After mounted the Office ISO, you can find the "Install now" option in the context menu of the CD-ROM. This operation will start installation immediately.
+
+## Create Office ISO without configuration
+
+Open Office Tool Plus, on deploy page, change deployment mode to `Download`.
+
+Add products as you want, such as Office Pro Plus 2021 - Volume License.
+
+Add languages as you want, if not, you need to connected to Internet when installing Office.
+
+Change other settings if needed.
+
+**To verify the Office installation, check "Verify Office installations files after download." on "Download settings"**.
+
+::: tip Tip
+If you want to download Office for another version of Windows, for example, to download Office on Windows 10 for Windows 7, change *Download Settings - UA* to the corresponding system version.
 :::
 
-::: details 创建自动安装的 Office ISO
+Click "start deploy".
 
-``` txt
-注意，该模式下的 Office Tool Plus 无法使用以下功能：
-- 安装完成后创建桌面快捷方式。
-- 安装完成后安装 iSlide 插件。
-- 安装完成后注销/关机/重启。
-- 使用 Office Tool Plus 作为安装模块。
+When finished downloading, press F5 to clear all configurations, also you can "refresh" on the submenu of "view XML code". After that, all products and languages should be clear.
 
-如有以上需求，请选择前两个方式创建 Office ISO 文件。
+Finally change deployment mode to `Create ISO file`, then start deploy.
+
+## More information
+
+### How to download both 32-bit and 64-bit of Offce?
+
+When downloading Office, switch architecture from 32-bit to 64-bit, then click "start deploy" again. Also you can download 32-bit of Office first, then download 64-bit of Office. Office Tool Plus will skip to download the existing files.
+
+### How can I use one-click installation without autoplay enabled?
+
+In some cases, the autoplay may not be enabled on the Windows client or it may not work properly. To use one-click installation, we need to create batch file and save it to the root directory of Office Tool Plus. Office Tool Plus will pack up the files when creating Office ISO.
+
+::: tip Tip
+You MUST save the batch files using English name. Non-English characters is not allowed.
+
+ConfigForISO.xml created by Office Tool Plus, make sure you are creating Office ISO with default configuration.
+:::
+
+For single edition of Office ISO (such as 32-bit), we can create the batch file:
+
+**Setup.bat:**
+
+```batch
+@echo off
+
+"Office Tool Plus.exe" /isoInstall
 ```
 
-保持刚才的设置不变。
+When the above command is executed, Office Tool Plus will look for `ConfigForISO.xml` and automatically start the installation.
 
-用记事本或者 Visual Studio Code 等编辑器打开 RunMe.bat，修改 22 行内容如下：
+For 32-bit and 64-bit, using these commands:
 
-``` batch
-start "" "Office Tool Plus.exe" /loadConfig "%~dp0ConfigForISO.xml" /SourcePath "%~dp0"
+**Setup-32.bat:**
+
+```batch
+@echo off
+
+:: For 32-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 32
 ```
 
-保存 RunMe.bat，回到 Office Tool Plus，点击“开始部署”，选择文件保存路径以及文件名即可。
+**Setup-64.bat:**
 
-创建 ISO 完毕后，将 RunMe.bat 内容改为原来的样子，否则你将不能再次打开 Office Tool Plus.
+```batch
+@echo off
 
-原来的样子：
-
-``` batch
-start "" "Office Tool Plus.exe"
+:: For 64-bit
+"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 64
 ```
 
-:::
+When the above command is executed, Office Tool Plus will load the `ConfigForISO.xml`, and modifies the architecture and source path attribute values according to the specified parameters in order to start the installation.
 
-创建完成后，你应该测试一下 Office ISO 是否和你预期的一样工作。
+_Note: If there is no special requirement, the parameters in the above commands do not need to be included with double quotes, otherwise unpredictable problems may occur._

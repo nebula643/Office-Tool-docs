@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://otp.landian.vip/static/images/logo.png
+heroImage: https://otp.landian.vip/static/images/logo.webp
 heroText: 
 tagline: A powerful and useful tool for Office deployments.
 actionText: Start
@@ -11,6 +11,6 @@ features:
 - title: Practical
   details: Born for Office deployments.
 - title: Powerful
-  details: Not only for install, you can do much more.
-footer: GPL-3.0 Licensed | Copyright © 2016- 2021 Yerong All Rights Reserved.
+  details: Full support of customize.
+footer: GPL-3.0 Licensed | Copyright © 2016 - 2022 Yerong All Rights Reserved.
 ---

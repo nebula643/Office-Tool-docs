@@ -16,10 +16,12 @@ Office 企业版长期通道被锁定，一般情况下无法更改，也无法�
 
 如果 Office Tool Plus 检测到 vlmcs 组件，则会使用 vlmcs 进行更详细的检测，包括延迟以及激活结果。
 
-vlmcs 组件包含在 with vlmcs 版本的 Office Tool Plus 中。
+[点击此处](https://download.coolhub.top/Extensions/Components/)获取 vlmcs 组件
 
 ## 移除 Office
 
-此功能支持移除 Office 2003 - Office 最新版本，简而言之，就是所有版本的 Office.
+此功能支持移除所有版本的 Office.
 
 如果过程中出现了某些文件无法访问的问题，你可以多试几次，也可以手动找到文件删除。
+
+获取详细信息请访问[从 PC 卸载 Office](https://support.microsoft.com/zh-cn/office/%E4%BB%8E-pc-%E5%8D%B8%E8%BD%BD-office-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)

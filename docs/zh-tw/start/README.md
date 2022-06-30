@@ -1,67 +1,65 @@
-# 欢迎使用 Office Tool Plus
+# 歡迎使用 Office Tool Plus
 
-## 介绍
+## 介紹
 
-Office Tool Plus 是一个强大且实用的 Office 部署工具。
+Office Tool Plus 是一個多功能集於一身的 Office 部署工具。
 
-Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 制作，可以很方便的部署 Office，其内置迅雷引擎可帮助您更快地下载 Office，当然，你也可以使用 Office Tool Plus 内置的各种小工具或者功能快捷、方便地激活和管理 Office 哦！
+Office Tool Plus 是基於[Office 部署工具](https://aka.ms/ODT)和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 開發的，可以使您更加便利的部署 Microsoft Office，其內建的 Thunder 下載引擎更能加速您下載 Microsoft Office 安裝文件。我們還有開發許多小工具，方便您更加輕鬆、快速地管理、啟用 Office 喔！
 
-支持下列产品：
+我們支援以下產品的管理和其他功能：
 
 - Microsoft 365
 - Office 2016, 2019, 2021
 - Visio 2016, 2019, 2021 & Online Plan 2
 - Project 2016, 2019, 2021 & Online Desktop Client
 
-无论你是个体还是团队，Office Tool Plus 都是你的得力小助手。
+無論你是個體還是團隊，Office Tool Plus 都是你的得力小幫手。
 
-## 功能
+## 特色功能
 
-- 创建 Office 安装配置，支持导出到本地、从本地或网络位置导入。
-- 下载 Office，支持所有通道的 Office，支持所有的 Office 语言。
-- 安装 Office，支持对现有的 Office 进行修改，包括新增产品和应用程序，卸载产品或应用程序。
-- 创建 Office ISO，支持默认安装配置、静默安装配置。
-- 激活 Office，支持在线激活、电话激活、KMS 激活
-- 支持 Office 授权管理，包括许可证管理，密钥管理以及 KMS 管理。
-- 修改 Office 更新通道，支持在不重装 Office 的情况下升级/降级 Office.
-- 移除 Office，在 Office 无法正常卸载的情况下强制移除 Office，支持 Office 2003 - Office 最新版本。
-- 内置 Office 工具箱，包括重置设置，修复模板问题，修复激活问题等。
-- 转换 Office 文档，基于 Office COM，稳定可靠。
-- 自定义主题，打造你自己的专属 Office Tool Plus.
-- 高级设置允许你使用更高级的功能，例如 Office 的内部通道。
+- 建立 Office 安裝設定檔: 支援匯出到您的電腦，或是從電腦、網路位址匯入 Office Tool Plus。
+- 下載 Office: 支援所有更新頻道的 Office 和所有 Office 語言套件的下載。
+- 安裝 Office: 支援對已安裝的 Office 進行管理，例如新增/移除產品或應用程式。
+- 建立 Office ISO 檔案: 支援預設安裝設定、安靜安裝設定。
+- 啟用 Office: 支援線上啟用、電話啟用、KMS 啟用和更多方式。
+- 支援 Office 授權管理: 例如授權管理、金鑰管理和 KMS 管理。
+- 修改 Office 更新頻道: 支援在不重新安裝 Office 的情況下，進行升級/降級 Office。
+- 移除 Office: 在 Office 無法正常移除的情況下，透過自主開發的工具，強制解除安裝 Office。(支援 2003-最新版本的 Office)
+- 內建實用工具箱: 包括重設設定、修復範本設定、啟用問題等實用工具。
+- 轉檔 Office 文件: 基於 Office COM，穩定可靠。
+- 自訂介面主題: 打造你自己的專屬 Office Tool Plus。
+- 進階設定能夠讓您使用更加進階的部署設定，例如 Office 的內部頻道。
 
-::: warning 注意事项
+::: warning 注意事項
 
-1. Office 文档转换功能可能无法兼容 64 位版本的 Office，我们将在以后尝试解决此问题。问题解决之前，请在 32 位的 Office 中使用此功能。
-2. Office Tool Plus 提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
+1. Office 文件轉換功能可能無法相容 64 位元的 Office 版本。
+2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
 
 :::
 
-::: details 关于零售、批量互转
-Office 许可证能够共存，而不只是零售版或者批量版本
+::: details 關於零售版、大量授權版的互轉
+Office 授權不限於零售版或大量授權版，都可以同時存在。
 
-在零售版的基础上再安装批量版许可证，并且将其都激活，Office 将会同时显示零售版激活信息和批量版激活信息。
+在零售版的基礎上再安裝大量授權版的授權，並且將其啟用，Office 將會同時顯示零售版和大量授權版的啟用資訊。
 :::
 
-## 组件与结构
+## 模組與結構
 
 ``` txt
 Office Tool
-├── Office Tool Plus.exe (主程序)
-├── ReadMe.txt (说明文件)
-├── RunMe.bat (仅在 with runtime 版本中包含)
-├── Runtime (仅在 with runtime 版本中包含)
+├── Office Tool Plus.exe (主程式)
+├── Office Tool Plus.Console.exe (Console Helper)
+├── hostfxr.dll (.NET Host)
+├── shared (.NET Runtimes)
 └── files
-    ├── setup.exe (微软 Office 部署工具)
-    ├── activate (包含 OSPP 以及相关文件)
-    │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (用于检测 KMS 主机可用性的工具，仅在 with vlmcs 版本中提供)
+    ├── setup.exe (Microsoft Office 部署工具)
+    ├── activate (包含 OSPP 以及相關檔案)
+    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
-    │   ├── x64 (64 位系统专用 Office 激活信息清除工具)
-    │   ├── x86 (32 位系统专用 Office 激活信息清除工具)
-    │   └── o15-ctrremove.diagcab (微软官方 Office 清理工具)
-    ├── preferences (Office 应用程序首选项相关数据，由微软提供)
-    └── Thunder (迅雷云加速开放平台相关文件)
+    │   ├── x64 (64 位元系統專用的 Office 啟用資訊清理工具)
+    │   └── x86 (32 位元系統專用的 Office 啟用資訊清理工具)
+    ├── preferences (Office 應用程式喜好設定的相關數據，由 Microsoft 提供)
+    └── Thunder (Thunder加速開放平臺相關文件)
 ```
 
-通常情况下，Office Tool Plus 会自动下载缺失的组件并自动保持其为最新版本。如果某些组件丢失或者无法自动下载，建议重新下载 Office Tool Plus 以解决问题。
+在正常情況下，Office Tool Plus 會自動下載缺失的模組，並自動更新至最新版本。如果某些模組丟失或無法自動下載，建議您重新至官網下載 Office Tool Plus 以解決問題。

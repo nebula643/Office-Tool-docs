@@ -15,6 +15,23 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 
 无论你是个体还是团队，Office Tool Plus 都是你的得力小助手。
 
+## 下载
+
+下载 Office Tool Plus:
+
+- [Office Tool Plus 官方网站](http://otp.landian.vip/)
+
+版本区别：
+
+- 包含框架版本：包含 .NET Runtime，可以在不安装 .NET Runtime 的情况下直接运行 Office Tool Plus.
+- 普通版本：仅包含 Office Tool Plus 以及基本组件。
+
+> 推荐下载包含框架的版本，方便使用。
+
+### 解压
+
+下载完成后，请将 Office Tool Plus 解压到一个合适的位置，例如桌面。**请勿在压缩包内直接双击运行 Office Tool Plus**.
+
 ## 功能
 
 - 创建 Office 安装配置，支持导出到本地、从本地或网络位置导入。
@@ -32,15 +49,9 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)和 [OSPP](http
 
 ::: warning 注意事项
 
-1. Office 文档转换功能可能无法兼容 64 位版本的 Office，我们将在以后尝试解决此问题。问题解决之前，请在 32 位的 Office 中使用此功能。
-2. Office Tool Plus 提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
+1. Office 文档转换功能可能无法兼容 64 位版本的 Office.
+2. Office Tool Plus 只提供激活管理功能，你需要拥有正版许可才可以激活你的 Office.
 
-:::
-
-::: details 关于零售、批量互转
-Office 许可证能够共存，而不只是零售版或者批量版本
-
-在零售版的基础上再安装批量版许可证，并且将其都激活，Office 将会同时显示零售版激活信息和批量版激活信息。
 :::
 
 ## 组件与结构
@@ -48,19 +59,17 @@ Office 许可证能够共存，而不只是零售版或者批量版本
 ``` txt
 Office Tool
 ├── Office Tool Plus.exe (主程序)
-├── ReadMe.txt (说明文件)
-├── RunMe.bat (仅在 with runtime 版本中包含)
-├── Runtime (仅在 with runtime 版本中包含)
+├── Office Tool Plus.Console.exe (终端助手)
+├── hostfxr.dll (.NET Host)
+├── shared (.NET Runtimes)
 └── files
     ├── setup.exe (微软 Office 部署工具)
     ├── activate (包含 OSPP 以及相关文件)
-    │   ├── OSPP.VBS (Office Software Protection Platform)
-    │   └── vlmcs.exe (用于检测 KMS 主机可用性的工具，仅在 with vlmcs 版本中提供)
+    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
     │   ├── x64 (64 位系统专用 Office 激活信息清除工具)
-    │   ├── x86 (32 位系统专用 Office 激活信息清除工具)
-    │   └── o15-ctrremove.diagcab (微软官方 Office 清理工具)
-    ├── preferences (Office 应用程序首选项相关数据，由微软提供)
+    │   └── x86 (32 位系统专用 Office 激活信息清除工具)
+    ├── preferences (Office 应用程序首选项数据，由微软提供)
     └── Thunder (迅雷云加速开放平台相关文件)
 ```
 

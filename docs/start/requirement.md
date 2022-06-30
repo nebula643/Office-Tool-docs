@@ -1,21 +1,33 @@
-# 系统要求
+# System Requirements
 
-## 框架
+## Operating System
 
-[.NET 5 Desktop Runtime x86](https://dotnet.microsoft.com/download/dotnet/current/runtime).
+- Windows 7 SP1 or higher, Windows 10 is recommended.
+- Windows Server 2008 R2 SP1 or higher.
 
-with runtime 版本中自带 Runtime library，你可以通过双击 RunMe.bat 直接打开 Office Tool Plus 而无需安装 Desktop Runtime.
+> Office Tool Plus doesn't support macOS or Linux.
 
-## 支持的系统
+## Hardware
 
-Windows 7 SP1, Windows 8, Windows 10.
+Screen resolution: 1024 x 768 or higher.
 
-Windows Server 2008 R2 SP1, Windows Server 2012 或者更高版本。
+## Runtime
 
-> Mac 用户请自行处理，Office Tool Plus 不支持也不可能支持 Mac OS.
+[.NET 6.0 Desktop Runtime x86](https://aka.ms/dotnet/6.0/windowsdesktop-runtime-win-x86.exe).
 
-## 针对 Windows 7 无法打开的解决方案
+You can download Office Tool Plus which includes .NET Runtime, that can run Office Tool Plus without .NET Runtime installation.
 
-由于大多数 Windows 7 系统并没有更新，为了能顺利运行 Office Tool Plus，必须更新系统至最新版。
+## For Windows 7
 
-通常情况下可以使用 Windows Update 将系统更新到最新，如果 Windows Update 无法运行或者需要一次性更新多个系统，请[下载 Win 7 专用系统更新包](https://download.coolhub.top/Extensions/Win7_UpdatePack/)使用。
+If you can't run Office Tool Plus on Windows 7, please update your system using Windows Update.
+
+For quick solution, please try to download KB2533623 update first:
+
+- [Update for Windows 7 for x86-based Systems (KB3063858)](https://www.microsoft.com/en-us/download/details.aspx?id=47409)
+- [Update for Windows 7 for x64-based Systems (KB3063858)](https://www.microsoft.com/en-us/download/details.aspx?id=47442)
+
+If not working, update the system completely:
+
+- [Windows 7 update pack](https://download.coolhub.top/Extensions/Win7_UpdatePack/)
+
+If still not working, try to re-install Windows, or upgrade to Windows 10+ for better experience.
