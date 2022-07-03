@@ -2,7 +2,7 @@
 
 ## Office Tool Plus 快捷键
 
-> 这些新的快捷键仅在 V9 等更新版本中可用。
+> 这些新的快捷键仅在 V9.0.2 等更新版本中可用。
 
 - <kbd>Esc</kbd>: 关闭右侧面板（如果已打开）
 - <kbd>F1</kbd>: 显示帮助
@@ -24,7 +24,7 @@
 - <kbd>Ctrl + L</kbd>: 安装 iSlide
 - <kbd>Ctrl + Alt + P</kbd>: 打开产品列表
 - <kbd>Ctrl + Alt + L</kbd>: 打开语言列表
-- <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署
+- <kbd>Ctrl + Alt + D</kbd>: 忽略警告或错误，强制进行部署
 
 ### 激活页面
 
