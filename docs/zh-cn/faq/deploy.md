@@ -1,10 +1,21 @@
 # 部署问题
 
-## 在 Windows 7 或 Windows 8 中安装 Office
+## 支持终止和 Microsoft 365 应用
 
-你无法在 Windows 7 或 Windows 8 中安装 Office 2019 或 Office 2021，除此之外你可以选择其他套件或产品进行安装，我们推荐使用“当前通道”进行 Office 的部署。
+Microsoft 365 应用不再支持 Windows 7 和 Windows 8 (包括 8.1 和 Server 操作系统)。微软强烈建议您迁移到受支持的操作系统。
 
-> 获取更多信息请访问: [Windows 8 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-8-support), [Windows 7 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-7-support).
+如果你仍然想在你的 PC 上安装 Microsoft 365 应用，请使用 ***当前通道*** 作为部署时的通道。如果你不能在 Windows 8 或 Windows 8.1 中 安装 Microsoft 365 应用，请将安装模块从 Office 部署工具更改为 Office Tool Plus.
+
+若要获取更多信息请访问:
+
+- [Windows 7 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-7-support).
+- [Windows 8 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-8-support).
+- [Windows 8.1 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-81-support).
+- [Windows Server 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-server-support).
+
+::: warning 注意
+即使你更改安装模块，你也无法在 Windows 7 中安装 Office 2019/2021.
+:::
 
 ## This product can't be installed on the selected update channel
 

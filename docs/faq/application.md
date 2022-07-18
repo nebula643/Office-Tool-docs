@@ -8,7 +8,7 @@ If Office Tool Plus is working, reconnect to network.
 
 ## The window of Office Tool Plus is blank
 
-Use the following command to disable hardware acceleration:
+Open CMD or PowerShell, and using the following command to disable hardware acceleration:
 
 ``` batch
 "Office Tool Plus" /enableHWAcc false

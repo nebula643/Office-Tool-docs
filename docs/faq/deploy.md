@@ -1,10 +1,21 @@
 # Deploy Questions
 
-## Install Office on Windows 7 or Windows 8
+## End of support and Microsoft 365 Apps
 
-As we know, you can not install Office 2019/2021 on Windows 7 or Windows 8. We suggested to use "Current Channel" when installing Office.
+Microsoft 365 Apps is no longer supported on Windows 7 and Windows 8 (includes 8.1 and server OS). Microsoft strongly recommend you move to a supported operating system.
 
-> For more information please visit: [Windows 8 end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-8-support), [Windows 7 end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-7-support).
+If you still want to install Microsoft 365 Apps on your PC, please use ***Current Channel*** as deploy channel. If you can't install it on Windows 8 or Windows 8.1, please change installation module from Office Deployment Tool to Office Tool Plus.
+
+For more information please visit:
+
+- [Windows 7 end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-7-support).
+- [Windows 8 end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-8-support).
+- [Windows 8.1 end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-81-support).
+- [Windows Server end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-server-support).
+
+::: warning Notice
+You can't install Office 2019/2021 on Windows 7 even you changed the installation module.
+:::
 
 ## This product can't be installed on the selected update channel
 
