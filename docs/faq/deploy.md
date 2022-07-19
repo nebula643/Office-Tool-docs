@@ -1,10 +1,10 @@
 # Deploy Questions
 
-## End of support and Microsoft 365 Apps
+## Windows end of support and Microsoft 365 Apps
 
-Microsoft 365 Apps is no longer supported on Windows 7 and Windows 8 (includes 8.1 and server OS). Microsoft strongly recommend you move to a supported operating system.
+Microsoft 365 Apps may not install or run correctly on older systems. Microsoft strongly recommend you move to a supported operating system for better experience.
 
-If you still want to install Microsoft 365 Apps on your PC, please use ***Current Channel*** as deploy channel. If you can't install it on Windows 8 or Windows 8.1, please change installation module from Office Deployment Tool to Office Tool Plus.
+If you still want to install Microsoft 365 Apps on your PC, please use ***Current Channel*** as deploy channel. If you receive a message that your operating system is not supported when installing Microsoft 365 Apps, you can try changing the installation module from `Office Deployment Tool` to `Office Tool Plus` to skip the compatibility check.
 
 For more information please visit:
 

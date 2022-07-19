@@ -1,12 +1,12 @@
 # 部署问题
 
-## 支持终止和 Microsoft 365 应用
+## Windows 支持终止和 Microsoft 365 应用
 
-Microsoft 365 应用不再支持 Windows 7 和 Windows 8 (包括 8.1 和 Server 操作系统)。微软强烈建议您迁移到受支持的操作系统。
+Microsoft 365 应用可能无法在老旧的系统上安装或运行。微软强烈建议您迁移到受支持的操作系统以便获得更好的使用体验。
 
-如果你仍然想在你的 PC 上安装 Microsoft 365 应用，请使用 ***当前通道*** 作为部署时的通道。如果你不能在 Windows 8 或 Windows 8.1 中 安装 Microsoft 365 应用，请将安装模块从 Office 部署工具更改为 Office Tool Plus.
+如果你仍然想在你的 PC 上安装 Microsoft 365 应用，请使用 ***当前通道*** 作为部署时的通道。如果你在安装 Microsoft 365 应用时收到操作系统不受支持的提示，你可以尝试将安装模块从 `Office 部署工具`更改为 `Office Tool Plus` 以跳过操作系统兼容性检查。
 
-若要获取更多信息请访问:
+获取更多信息请访问:
 
 - [Windows 7 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-7-support).
 - [Windows 8 支持终止和 Microsoft 365 应用](https://docs.microsoft.com/zh-cn/deployoffice/endofsupport/windows-8-support).
