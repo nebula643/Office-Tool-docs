@@ -23,7 +23,7 @@
 | 命令 | 说明 |  |
 | :-- | :-- | :-- |
 | /isoInstall | 读取 ISO 配置文件并启动安装程序。 | 你必须创建 Office ISO，确保 ISO 内含 ConfigForISO.xml，挂载后再执行命令 |
-| /loadConfig *value* | 读取 XML 配置文件并启动安装程序。 | *values*: XML 文件路径 |
+| /loadConfig *value* | 读取 XML 配置文件并启动安装程序。 | *value*: XML 文件路径 |
 | /sourcePath *value* | 覆写 XML 配置文件中的源路径属性，该命令需配合 `/loadConfig` 命令使用 |
 | /clientEdition *value* | 覆写 XML 配置文件中的体系结构属性，*value*: 32 或 64，该命令需配合 `/loadConfig` 命令使用 |
 | /enableHWAcc *value* | 启用硬件加速 | *value*: *true* 或 *false*，默认为 *true* |
@@ -108,7 +108,7 @@ ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /inpkey:*value* | 安装指定的 Office 密钥 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
 | /unpkey:*value* | 卸载指定的 Office 密钥 | /unpkey:XXXXX |
 | /sethst:*value* | 设置 KMS 主机地址 | /sethst:kms.example.com |
-| /setprt:*value* | 设置 KMS 主机端口，默认 1688 | /setprt:1688 |
+| /setprt:*value* | 设置 KMS 主机端口，默认值: 1688 | /setprt:1688 |
 | /act | 激活 Office 客户端产品 | /act |
 
 有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。

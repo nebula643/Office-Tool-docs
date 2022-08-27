@@ -23,9 +23,9 @@ These commands can only be used in command-line.
 | Command                | Description                                 |                                                      |
 | :--                    | :--                                         | :--                                                  |
 | /isoInstall            | Read the ISO config and start installation. | You must create a ISO and mount it first, make sure the ISO contains *ConfigForISO.xml*, or the command will not invoke.
-| /loadConfig *value*    | Read a config and start installation.       | *values*: path to XML config. |
-| /sourcePath *value*    | Override the source path of config.         | *value*: path of the source. The command should be used with the `/loadConfig` command. |
-| /clientEdition *value* | Override the architecture of config.        | *value*: 32 or 64. The command should be used with the `/loadConfig` command. |
+| /loadConfig *value*    | Read a config and start installation.       | *value*: path to XML config. |
+| /sourcePath *value*    | Override the source path of config.         | *value*: path of the source. The command must be used with the `/loadConfig` command. |
+| /clientEdition *value* | Override the architecture of config.        | *value*: 32 or 64. The command must be used with the `/loadConfig` command. |
 | /enableHWAcc *value*   | Enable hardware acceleration.               | *value*: *true* or *false*, default value is *true*. |
 
 ## Deploy commands
@@ -110,7 +110,7 @@ ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /inpkey:*value*   | Installs a product key.                          | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
 | /unpkey:*value*   | Uninstalls an installed product key.             | /unpkey:XXXXX |
 | /sethst:*value*   | Sets a KMS host name.                            | /sethst:kms.example.com |
-| /setprt:*value*   | Sets a KMS port, normal *value* is 1688.         | /setprt:1688 |
+| /setprt:*value*   | Sets a KMS port, default *value* is 1688.        | /setprt:1688 |
 | /act              | Activates installed Office product keys.         | /act |
 
 For more information please visit [OSPP documentation](https://docs.microsoft.com/en-us/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office).
