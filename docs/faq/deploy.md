@@ -21,7 +21,7 @@ You can't install Office 2019/2021 on Windows 7 even you changed the installatio
 
 If you have Office installation downladed, please make sure that the channel of Office installation is match the channel you are using. You can check them like that:
 
-![Check channel](/assets/img/en-us/check-channels.png)
+![Check channel](/docs/assets/img/en-us/check-channels.png)
 
 If they are not equals, please delete your installation packages, then re-download again. Or change the product to match the channel.
 

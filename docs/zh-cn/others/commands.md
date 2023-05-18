@@ -6,7 +6,7 @@
 
 这些命令只能在命令框中使用。
 
-![Command box](/assets/img/zh-cn/command-box.png)
+![Command box](/docs/assets/img/zh-cn/command-box.png)
 
 | 命令 | 说明 |  |
 | :-- | :-- | :-- |

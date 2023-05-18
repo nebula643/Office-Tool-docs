@@ -6,7 +6,7 @@ The commands are case-insensitive and are executed in the order they are entered
 
 These commands can only be used in command box.
 
-![Command box](/assets/img/en-us/command-box.png)
+![Command box](/docs/assets/img/en-us/command-box.png)
 
 | Command             | Description                        |                                                                       |
 | :--                 | :--                                | :--                                                                   |

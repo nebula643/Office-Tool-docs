@@ -36,7 +36,7 @@ If everything is ok, click *Start deploy* to confirm.
 
 ## Modifying applications
 
-![Modify Applications](/assets/img/en-us/modify-applications.png)
+![Modify Applications](/docs/assets/img/en-us/modify-applications.png)
 
 Check applications that you want to install. Uncheck applications that you want to uninstall.
 
@@ -48,7 +48,7 @@ If the applications does not have the items you want, such as Access, add a new 
 
 ## Upgrade Office
 
-![Upgrade Office](/assets/img/en-us/upgrade-product.png)
+![Upgrade Office](/docs/assets/img/en-us/upgrade-product.png)
 
 Download Office installation from another PC, then make an ISO or copy the files to the client, add the same products as installed products, finally start deploy.
 
@@ -58,7 +58,7 @@ Office Tool Plus supports changing Office from 32-bit to 64-bit (or 64-bit to 32
 
 First change the architecture to the one you want. If you want to migrate to 64-bit Office, select 64-bit now.
 
-![Migrate Office](/assets/img/en-us/migrate-office.png)
+![Migrate Office](/docs/assets/img/en-us/migrate-office.png)
 
 Check *Advanced settings - upgrade options - migrate architecture*, then start deploy.
 

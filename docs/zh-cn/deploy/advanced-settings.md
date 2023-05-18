@@ -40,7 +40,7 @@
 
 除此之外，你还可以将应用程序首选项应用到现有的 Office 中，配置完毕后，在 *查看 XML 代码* 的子菜单中选择 *将首选项应用于 Office 应用程序* 即可，Office 部署程序会自动应用设置。
 
-![Apply settings](/assets/img/zh-cn/apply-preferences.png)
+![Apply settings](/docs/assets/img/zh-cn/apply-preferences.png)
 
 您所定义的应用程序首选项将应用于设备的所有现有用户以及未来添加到该设备的任何新用户。如果在 Office 应用程序运行时应用首选项，则新的设置将在 Office 下次运行时生效。
 

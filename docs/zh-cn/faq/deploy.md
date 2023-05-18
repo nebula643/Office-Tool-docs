@@ -21,7 +21,7 @@ Microsoft 365 应用可能无法在老旧的系统上安装或运行。微软强
 
 如果您已经下载了 Office 安装文件，请确保安装文件的通道和你所使用的通道匹配，你可以像这样进行检查：
 
-![Check channel](/assets/img/zh-cn/check-channels.png)
+![Check channel](/docs/assets/img/zh-cn/check-channels.png)
 
 如果通道不匹配，请删除已经下载了的安装包，并重新下载。或者更改产品，使其与目标通道匹配。
 
