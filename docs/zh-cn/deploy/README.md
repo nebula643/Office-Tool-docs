@@ -36,7 +36,7 @@
 
 ## 更改应用程序
 
-![Modify Applications](/docs/assets/img/zh-cn/modify-applications.png)
+![Modify Applications](/assets/img/zh-cn/modify-applications.png)
 
 若要新增一个应用程序，请将其选中；若要卸载一个应用程序，请将其取消选中。
 
@@ -48,7 +48,7 @@
 
 ## 升级现有的 Office
 
-![Upgrade Office](/docs/assets/img/zh-cn/upgrade-product.png)
+![Upgrade Office](/assets/img/zh-cn/upgrade-product.png)
 
 在另外的 PC 上下载 Office 安装文件，创建 Office ISO 或者将其拷贝到客户端计算机中，然后在部署页面添加一个与当前已安装的 Office 一摸一样的产品即可开始部署。
 
@@ -58,7 +58,7 @@ Office Tool Plus 支持将 Office 从 32 位更改为 64 位（反之亦可）�
 
 首先将体系结构更改为自己想要的，如果你想迁移到 64 位的 Office。那么现在就选择 64 位。
 
-![Migrate Office](/docs/assets/img/zh-cn/migrate-office.png)
+![Migrate Office](/assets/img/zh-cn/migrate-office.png)
 
 之后将 *高级设置 - 升级选项 - 迁移体系结构* 勾选，然后开始部署即可。
 

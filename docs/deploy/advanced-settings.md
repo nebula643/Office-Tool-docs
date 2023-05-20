@@ -40,7 +40,7 @@ The function allow you defines application preferences for Office Apps, includin
 
 You can apply new application preferences to client computers that already have Office installed. After you have set the values of preferences, click *Applying preferences for Office applications* in the *View XML code* submenu.
 
-![Apply settings](/docs/assets/img/en-us/apply-preferences.png)
+![Apply settings](/assets/img/en-us/apply-preferences.png)
 
 The app preferences are applied to all existing users of the device and any new users added to the device in the future. If you apply application preferences when Office apps are running, the preferences will be applied when Office is next restarted.
 
