@@ -24,11 +24,7 @@
 - <kbd>Ctrl + L</kbd>: 安装 iSlide
 - <kbd>Ctrl + Alt + P</kbd>: 打开产品列表
 - <kbd>Ctrl + Alt + L</kbd>: 打开语言列表
-<<<<<<< HEAD
-- <kbd>Ctrl + Shift + D</kbd>: 忽略警告或错误，强制进行部署
-=======
 - <kbd>Ctrl + Alt + D</kbd>: 忽略警告或错误，强制进行部署
->>>>>>> upstream/main
 
 ### 激活页面
 

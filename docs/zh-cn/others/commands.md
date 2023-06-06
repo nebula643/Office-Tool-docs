@@ -108,11 +108,7 @@ ospp /insLicID ProPlus2021Volume /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /inpkey:*value* | 安装指定的 Office 密钥 | /inpkey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX |
 | /unpkey:*value* | 卸载指定的 Office 密钥 | /unpkey:XXXXX |
 | /sethst:*value* | 设置 KMS 主机地址 | /sethst:kms.example.com |
-<<<<<<< HEAD
-| /setprt:*value* | 设置 KMS 主机端口，默认 1688 | /setprt:1688 |
-=======
 | /setprt:*value* | 设置 KMS 主机端口，默认值: 1688 | /setprt:1688 |
->>>>>>> upstream/main
 | /act | 激活 Office 客户端产品 | /act |
 
 有关 OSPP 的更多命令请查看[微软官方文档](https://docs.microsoft.com/zh-cn/deployoffice/vlactivation/tools-to-manage-volume-activation-of-office)。

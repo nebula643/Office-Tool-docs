@@ -24,11 +24,7 @@
 - <kbd>Ctrl + L</kbd>: Install iSlide.
 - <kbd>Ctrl + Alt + P</kbd>: Open products list.
 - <kbd>Ctrl + Alt + L</kbd>: Open languages list.
-<<<<<<< HEAD
-- <kbd>Ctrl + Shift + D</kbd>: Ignore errors or warnings, force start deploy.
-=======
 - <kbd>Ctrl + Alt + D</kbd>: Ignore errors or warnings, force start deploy.
->>>>>>> upstream/main
 
 ### Activate page
 
