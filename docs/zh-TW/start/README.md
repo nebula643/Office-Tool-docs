@@ -15,7 +15,7 @@ Office Tool Plus 是基於 [Office 部署工具](https://docs.microsoft.com/en-u
 
 無論你是個體還是團隊，Office Tool Plus 都是你的得力小幫手。
 
-## Download
+## 下載
 
 Office Tool Plus 下載位址如次：
 
@@ -52,7 +52,7 @@ Office Tool Plus 下載位址如次：
 1. Office 文件轉換功能可能無法相容 64 位元的 Office 版本。
 2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
 
-:::
+::::
 
 ## 元件與架構
 
