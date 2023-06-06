@@ -48,7 +48,6 @@ Office Tool Plus 在 ISO 模式下工作时会自动适配某些参数，您无�
 
 **在开始写入 Office ISO 前（下载完成前），请按下 F5 或者手动清空所有产品和语言，以确保创建的 Office ISO 不包含 ConfigForISO.xml.**
 
-
 ::: tip 提示
 如果你需要创建同时包含 32 位和 64 位的 Office ISO，请将体系结构更改为 64 位（或 32 位），然后再次点击开始部署即可。
 :::
