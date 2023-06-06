@@ -2,7 +2,7 @@
 
 ## Office Tool Plus shortcut keys
 
-> The new shortcut keys only available in V9 or later.
+> The new shortcut keys only available in V9.0.2 or later.
 
 - <kbd>Esc</kbd>: Close right panel (if opened).
 - <kbd>F1</kbd>: Help.
@@ -24,7 +24,11 @@
 - <kbd>Ctrl + L</kbd>: Install iSlide.
 - <kbd>Ctrl + Alt + P</kbd>: Open products list.
 - <kbd>Ctrl + Alt + L</kbd>: Open languages list.
+<<<<<<< HEAD
 - <kbd>Ctrl + Shift + D</kbd>: Ignore errors or warnings, force start deploy.
+=======
+- <kbd>Ctrl + Alt + D</kbd>: Ignore errors or warnings, force start deploy.
+>>>>>>> upstream/main
 
 ### Activate page
 

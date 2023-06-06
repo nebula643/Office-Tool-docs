@@ -8,7 +8,7 @@
 
 ## Office Tool Plus 的窗口一片空白，看不见任何东西
 
-使用以下命令关闭 Office Tool Plus 的硬件加速：
+打开 CMD 或 PowerShell，使用以下命令关闭 Office Tool Plus 的硬件加速：
 
 ``` batch
 "Office Tool Plus" /enableHWAcc false
