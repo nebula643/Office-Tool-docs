@@ -47,7 +47,7 @@ Office Tool Plus 下載位址如次：
 - 自訂個人化主題: 打造專屬於自己的 Office Tool Plus。
 - 進階設定——讓您使用更加進階的部署設定，例如 Office 的內部頻道。
 
-::: warning 注意事项
+::: warning 注意事項
 
 1. Office 文件轉換功能可能無法相容 64 位元的 Office 版本。
 2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
