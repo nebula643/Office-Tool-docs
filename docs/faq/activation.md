@@ -1,38 +1,63 @@
 # Activation Questions
 
-## The Software Licensing Service reported that license consumption failed
+## 0x80131500
 
-Error code: 0xC004E015
+This error code has no meaning, please refer to the given error message to troubleshoot the problem.
 
-Solution
+## 0x80131539
 
----
+This error code has no meaning, please refer to the given error message to troubleshoot the problem.
 
-Automatic operation: Rebuild activation token, you can find the option in the Toolbox page. Then retry to activate Office.
+## 0xC004F015
 
----
+Error description: The Software Licensing Service reported that the license is not installed.
 
-Manual operation: Stop `Software Protection` service, delete dat files on `C:\Windows\System32\spp\store\2.0` (on Windows Insider, the folder name is store_test). Then retry to activate Office.
+If your Office was activated, you can ignore the messgae.
 
-After installed Office licenses, wait three minutes, then continue your operation.
+If your Office is not activated, check your activation steps is correct or not, or purchase Office from Microsoft.
 
-**If the problem is not resolved, you may need to try again.**
+## 0xC004F017
 
-## The Software Licensing Service reported that a token in the Token Store contains an invalid hash
+Error description: The Software Licensing Service reported that the license is not installed.
 
-Error code: 0x8004E108
+Solution is same as [0xC004F015](activation.md#_0xc004f015).
 
-Solution is same as the previous item.
+## 0xC004F069
 
-## The data is invalid (0x8007000D)
+Error description: The Software Licensing Service reported that the product SKU is not found.
 
-Make sure:
+The Office product key you are installing does not have a corresponding license, you need to install the corresponding Office license first, and then install the product key.
 
-- Your system time is correct.
-- The KMS host you are using is working fine. [How to test?](/others/toolbox.html#check-kms-status)
+## 0xC004E015
 
-Then do the following things:
+Error description: The Software Licensing Service reported that license consimption failed.
 
-- Reset Software Protection service, you can find the option on toolbox page.
-- Set KMS host and port, the default port is 1688.
-- Try to activate again.
+Please refer to [Rebuild Windows Activation Token](/toolbox/windows.md#rebuild-windows-activation-token).
+
+## 0x8004E108
+
+Error description: The Software Licensing Service reported that a token in the Token Store contains an invalid hash.
+
+Solution is same as [0xC004E015](activation.md#_0xc004e015).
+
+## 0x8007000D
+
+Error description: The data is invalid.
+
+Check your OS time is correct or not. Make sure the KMS host that you are using is working. [How to test?](/toolbox/README.md#test-kms-host-reachability)
+
+Do the following thins:
+
+- [Reset Software Protection service](/toolbox/windows.md#reset-software-protection-service).
+- Try activating again.
+
+## 0x8007007B
+
+Error description: The filename, directory name, or volume label syntax is incorrect.
+
+Solution is same as [0x8007000D](activation.md#_0x8007000d).
+
+## No solutions at this time
+
+- Error code: 0x80040154, Class not registered.
+- Error code: 0x80070002, The system cannot find the file specified.

@@ -4,14 +4,14 @@
 
 Office Tool Plus is a powerful and useful tool for Office Deployment.
 
-Office Tool Plus is made based on [Office Deployment Tool](https://docs.microsoft.com/en-us/deployoffice/overview-office-deployment-tool) and [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office). It can deploy Office easily. It has integrated the Thunder download engine so that you can download Office faster. Certainly, you can use the little functions provided by Office Tool Plus to manage and activate Office.
+Office Tool Plus is made based on [Office Deployment Tool](https://docs.microsoft.com/en-us/deployoffice/overview-office-deployment-tool). It can deploy Office easily. It has integrated the `Thunder` and [Downloader](https://github.com/bezzad/Downloader) engine so that you can download Office faster. Certainly, you can use the little functions provided by Office Tool Plus to manage and activate Office.
 
 The following products are supported:
 
 - Microsoft 365.
 - Office 2016, 2019, 2021.
-- Visio 2016, 2019, 2021 and Online Plan 2.
-- Project 2016, 2019, 2021 and Online Desktop Client.
+- Visio 2016, 2019, 2021 and Visio Online Plan 2.
+- Project 2016, 2019, 2021 and Project Online Desktop Client.
 
 No matter what, Office Tool Plus is always your best helper.
 
@@ -27,6 +27,12 @@ Differences between the versions:
 - Normal: Only Office Tool Plus and base components.
 
 > We recommend you to download Office Tool Plus which includes runtime.
+
+Differences between the architecture:
+
+- x86: Works on 32 bit, 64 bit and ARM64 of Windows. Supports `Thunder` engine. Also supports `Downloader` engine, but memory problem may occurred when using `Downloader` engine.
+- x64: Works on 64 bit and ARM64 of Windows. Only supports `Downloader` engine.
+- ARM64: Works on ARM64 of Windows. Better compatibility and performance for ARM64 platform, others are same as the x64.
 
 ### Unpack
 
@@ -45,12 +51,10 @@ Extract Office Tool Plus to a normal location, such as desktop. **Do NOT run Off
 - Integrated Office tools, including resetting settings, fixing Office problems.
 - Convert Office documents, based on Office COM. it's fast and stable.
 - Personalize theme, you can build your special Office Tool Plus.
-- Advanced settings allow you to use more advanced features, such as Office internal channels.
 
-::: warning Attention
+::: tip Attention
 
-1. Office documents converter may not be capable with 64-bit of Office.
-2. Office Tool Plus only provides activation management. You need to have a genuine license to activate your products.
+1. Office Tool Plus only provides activation management. You need to have a genuine license to activate your products.
 
 :::
 
@@ -64,10 +68,8 @@ Office Tool
 ├── shared (.NET Runtimes)
 └── files
     ├── setup.exe (Microsoft Office Deployment Tool)
-    ├── activate (OSPP and other relating files)
-    │   └── OSPP.VBS (Office Software Protection Platform)
     ├── clean
-    │   ├── x64 (Office activation cleaner for x64 system)
+    │   ├── x64 (Office activation cleaner for x64 and ARM64 system)
     │   └── x86 (Office activation cleaner for x86 system)
     ├── preferences (Office applications preferences data, provided by Microsoft)
     └── Thunder (files related to Thunder download acceleration)

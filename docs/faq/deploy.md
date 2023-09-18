@@ -14,19 +14,7 @@ For more information please visit:
 - [Windows Server end of support and Microsoft 365 Apps](https://docs.microsoft.com/en-us/deployoffice/endofsupport/windows-server-support).
 
 ::: warning Notice
+
 You can't install Office 2019/2021 on Windows 7 even you changed the installation module.
+
 :::
-
-## This product can't be installed on the selected update channel
-
-If you have Office installation downladed, please make sure that the channel of Office installation is match the channel you are using. You can check them like that:
-
-![Check channel](/assets/img/en-us/check-channels.png)
-
-If they are not equals, please delete your installation packages, then re-download again. Or change the product to match the channel.
-
-If they are equals, please make sure you have [clear activation](/activate/#clear-activation) before start deploy.
-
----
-
-If you don't have Office installation downloaded, please make sure you have [clear activation](/activate/#clear-activation) before start deploy.

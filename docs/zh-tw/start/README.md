@@ -1,78 +1,78 @@
-# 歡迎
+# 欢迎使用 Office Tool Plus
 
-## 介紹
+## 介绍
 
-Office Tool Plus 是一個多功能集於一身的 Office 部署工具。
+Office Tool Plus 是一个强大且实用的 Office 部署工具。
 
-Office Tool Plus 是基於 [Office 部署工具](https://docs.microsoft.com/en-us/deployoffice/overview-office-deployment-tool) 和 [OSPP](https://docs.microsoft.com/en-us/DeployOffice/vlactivation/tools-to-manage-volume-activation-of-office) 進行開發，透過整合 Thunder 下載引擎、小工具，協助您輕鬆、快速地部署、啟用、管理 Office。
+Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)制作，可以很方便的部署 Office，其内置`迅雷云加速开放平台`和 [Downloader](https://github.com/bezzad/Downloader) 引擎可帮助您更快地下载 Office。你也可以使用 Office Tool Plus 的其他功能、小工具快捷、方便地激活和管理 Office 哦！
 
-下列產品的皆受支援：
+支持下列产品：
 
 - Microsoft 365
 - Office 2016, 2019, 2021
-- Visio 2016, 2019, 2021 以及 Online Plan 2
-- Project 2016, 2019, 2021 以及Online Desktop Client
+- Visio 2016, 2019, 2021 & Visio Online Plan 2
+- Project 2016, 2019, 2021 & Project Online Desktop Client
 
-無論你是個體還是團隊，Office Tool Plus 都是你的得力小幫手。
+无论你是个体还是团队，Office Tool Plus 都是你的得力小助手。
 
-## 下載
+## 下载
 
-Office Tool Plus 下載位址如次：
+下载 Office Tool Plus:
 
-- [Office Tool Plus 官方網站](http://otp.landian.vip/)
+- [Office Tool Plus 官方网站](http://otp.landian.vip/)
 
-版本區別：
+版本区别：
 
-- 可攜式版：內包含 .NET 執行階段元件——無需安裝 .NET 執行階段即可執行 Office Tool Plus。
-- 普通版本：僅包含 Office Tool Plus 和基本元件。
+- 包含框架版本：包含 .NET Runtime，可以在不安装 .NET Runtime 的情况下直接运行 Office Tool Plus.
+- 普通版本：仅包含 Office Tool Plus 以及基本组件。
 
-> 推薦使用可攜式版，以便使用。
+> 推荐下载包含框架的版本，方便使用。
 
-### 解壓縮
+体系架构区别：
 
-請將 Office Tool Plus 壓縮檔解壓縮至合適的位置（例如桌面）。**請注意，勿在未解壓縮的情況下執行 Office Tool Plus** 。
+- x86（32 位）: 可以在 32 位、64 位 或 ARM64 的 Windows 中运行，支持使用`迅雷云加速开放平台`作为下载引擎；也支持 `Downloader` 下载引擎，但可能会发生内存不足问题。
+- x64（64 位）: 可以在 64 位 或 ARM64 的 Windows 中运行，不支持使用`迅雷云加速开放平台`，使用 `Downloader` 不会发生内存不足问题。
+- ARM64: 可以在 ARM64 的 Windows 中运行，针对 ARM64 平台有更好的兼容性和性能表现，其余同 x64 版本。
 
-## 特色功能
+### 解压
 
-- 建立 Office 安裝設定檔：支援匯出到您的電腦，或是從電腦、網路位址匯入 Office Tool Plus。
-- 下載 Office：支援所有更新頻道的 Office 和所有 Office 語言套件的下載。
-- 安裝 Office：支援對已安裝的 Office 進行管理，例如新增/移除產品或應用程式。
-- 建立 Office ISO 檔案：支援預設安裝設定、安靜安裝設定。
-- 啟用 Office：支援線上啟用、電話啟用、KMS 啟用和更多方式。
-- 支援 Office 授權管理：例如授權管理、金鑰管理和 KMS 管理。
-- 修改 Office 更新頻道：支援在不重新安裝 Office 的情況下，進行升級/降級 Office。
-- 移除 Office：在 Office 無法正常移除的情況下，強制解除安裝 Office（支援所有版本）。
-- 整合實用 Office 工具：包括重設 Office 設定、修復 Office 問題等實用工具。
-- 轉檔 Office 文件：基於 Office COM，穩定可靠。
-- 自訂個人化主題: 打造專屬於自己的 Office Tool Plus。
-- 進階設定——讓您使用更加進階的部署設定，例如 Office 的內部頻道。
+下载完成后，请将整个压缩包解压到一个合适的位置，例如桌面。**请勿在压缩包内直接双击运行 Office Tool Plus**.
 
-::: warning 注意事项
+## 功能
 
-1. Office 文件轉換功能可能無法相容 64 位元的 Office 版本。
-2. Office Tool Plus 提供啟用管理功能，但您必須擁有正版授權，才能啟用 Office。
+- 创建 Office 安装配置，支持导出到本地、从本地或网络位置导入。
+- 下载 Office，支持所有通道的 Office，支持所有的 Office 语言。
+- 安装 Office，支持对现有的 Office 进行修改，例如产品、语言、应用程序的安装与卸载。
+- 创建 Office ISO，支持默认安装配置、静默安装配置、扩展安装脚本。
+- 激活 Office，支持在线激活、电话激活、KMS 激活。
+- 支持 Office 授权管理，包括许可证管理，密钥管理以及 KMS 管理。
+- 修改 Office 更新通道，支持在不重装 Office 的情况下升级/降级 Office.
+- 移除 Office，在 Office 无法正常卸载的情况下强制移除 Office，支持 Office 2003 - Office 最新版本。
+- 内置 Office 工具箱，包括重置设置，修复安装问题，修复激活问题等。
+- 转换 Office 文档，基于 Office COM，稳定、快速、可靠。
+- 自定义主题，打造你自己的专属 Office Tool Plus.
 
-::::
+::: tip 注意事项
 
-## 元件與架構
+1. Office Tool Plus 只提供激活管理功能，你需要拥有正版许可证才可以激活你的 Office.
 
-```txt
+:::
+
+## 组件与结构
+
+``` txt
 Office Tool
-├── Office Tool Plus.exe (主程式)
-├── Office Tool Plus.Console.exe (主控台協助程式)
+├── Office Tool Plus.exe (主程序)
+├── Office Tool Plus.Console.exe (终端助手)
 ├── hostfxr.dll (.NET Host)
 ├── shared (.NET Runtimes)
 └── files
-    ├── setup.exe (Microsoft Office 部署工具)
-    ├── activate (OSPP 和其他相關檔案)
-    │   └── OSPP.VBS (Office 軟體保護平台)
+    ├── setup.exe (微软 Office 部署工具)
     ├── clean
-    │   ├── x64 (64 位元系統專用的 Office 啟用資訊清理工具)
-    │   └── x86 (32 位元系統專用的 Office 啟用資訊清理工具)
-    ├── preferences (Office 應用程式喜好設定的相關數據，由 Microsoft 提供)
-    └── Thunder (Thunder 加速開放平臺相關文件)
+    │   ├── x64 (64 位和 ARM64 系统专用 Office 激活信息清除工具)
+    │   └── x86 (32 位系统专用 Office 激活信息清除工具)
+    ├── preferences (Office 应用程序首选项数据，由微软提供)
+    └── Thunder (迅雷云加速开放平台相关文件)
 ```
 
-通常 Office Tool Plus 會自動下載缺失的元件，並自動更新至最新版本。
-
-如有部分元件遺失或無法自動下載，建議您重新下載 Office Tool Plus 以解決問題。
+通常情况下，Office Tool Plus 会自动下载缺失的组件并自动保持其为最新版本。如果某些组件丢失或者无法自动下载，建议重新下载 Office Tool Plus 以解决问题。
