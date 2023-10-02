@@ -58,7 +58,7 @@ export default defineUserConfig({
   // configure default theme
   theme: defaultTheme({
     logo: '/logo.ico',
-    repo: 'YerongAI/Office-Tool',
+    repo: 'YerongAI/Office-Tool-docs',
     docsDir: 'docs',
     sidebarDepth: 1,
 
