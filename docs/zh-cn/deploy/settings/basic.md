@@ -98,7 +98,7 @@ Office 部署工具是微软官方工具，提供了部署 Office 的完整支�
 
 应用程序会随你选择的产品不同而显示不同的内容。
 
-Groove 代表的是 OneDrive for Business, Lync 代表的是 Skype for Business. 某些应用程序（例如 Teams 和 OneDrive）可能需要重启系统才能完成安装。
+`Groove` 代表的是 OneDrive for Business，`Lync` 代表的是 Skype for Business。某些应用程序（例如 Teams 和 OneDrive）可能需要重启系统才能完成安装。
 
 Bing 是一个用于 Chrome 和 Edge 的扩展，若要获取更多信息，请访问 [Microsoft 必应搜索和 Microsoft 365 企业应用版](https://docs.microsoft.com/zh-cn/deployoffice/microsoft-search-bing).
 

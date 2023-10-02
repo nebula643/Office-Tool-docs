@@ -14,7 +14,7 @@
 
 ### Office 版本
 
-如果你需要安装 Office 的历史版本，你可以从 [Microsoft 文档](https://docs.microsoft.com/zh-cn/officeupdates/update-history-microsoft365-apps-by-date)获取可用的 Office 历史版本。
+如果你需要安装 Office 的历史版本，你可以从下拉框中选择可用的历史版本，也可以从 [Microsoft 文档](https://docs.microsoft.com/en-us/officeupdates/update-history-microsoft365-apps-by-date)获取可用的 Office 历史版本。如果下拉框中没有显示可用的历史版本，可能是你的网络连接失败，也可能是你所选择的更新通道没有可用的历史版本。
 
 如果你下载了 Office 安装包，则此处会显示相应通道下所有 Office 安装包的版本。
 

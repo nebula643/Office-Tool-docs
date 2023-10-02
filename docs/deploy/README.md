@@ -48,15 +48,15 @@ Once the configuration is complete and no errors, you can begin deploying Office
 
 如果您的文件类型是镜像文件（.iso），请双击打开、挂载，您也可以将其解压到某个文件夹中。如果您的文件类型是压缩包（例如 .zip, .7z, .rar），请将其解压到某个文件夹中。
 
-挂载/解压后，如果文件中包含 Office Tool Plus，请双击并打开 Office Tool Plus。如果没有，[download](/start/README.md#download) and run Office Tool Plus first.
+挂载/解压后，如果文件中包含 Office Tool Plus，请双击并打开 Office Tool Plus。If not, [download](/start/README.md#download) and run Office Tool Plus first.
 
-打开 Office Tool Plus 后，转到部署页面，确保安装文件能够正确加载并识别。如果没有，请点击`选择`按钮并根据提示选择 Office 安装文件。
+After opened Office Tool Plus, navigate to deploy page, 确保安装文件能够正确加载并识别。如果没有，请点击`选择`按钮并根据提示选择 Office 安装文件。
 
 ![Office installation](/images/en-us/deploy/office-installation.png)
 
 ::: tip Tips
 
-Office 安装文件应该能够完整展示版本号和语言包信息，并且没有错误消息。如果安装文件不包含语言，则安装的时候依然需要联网，否则会安装失败。
+Office 安装文件应该能够完整展示版本号和语言包信息，并且没有错误消息。如果安装文件不包含语言，或者仅包含校对工具，则安装的时候依然需要联网，否则会安装失败。
 
 :::
 

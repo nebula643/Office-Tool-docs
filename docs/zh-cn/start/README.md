@@ -40,7 +40,7 @@ Office Tool Plus 基于 [Office 部署工具](https://aka.ms/ODT)制作，可以
 
 ## 功能
 
-- 创建 Office 安装配置，支持导出到本地、从本地或网络位置导入。
+- 创建 Office 安装配置，支持导出到本地，或从本地或网络位置导入。
 - 下载 Office，支持所有通道的 Office，支持所有的 Office 语言。
 - 安装 Office，支持对现有的 Office 进行修改，例如产品、语言、应用程序的安装与卸载。
 - 创建 Office ISO，支持默认安装配置、静默安装配置、扩展安装脚本。
