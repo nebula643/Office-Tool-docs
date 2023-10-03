@@ -38,6 +38,9 @@ jobs:
         with:
           # node 版本
           node-version: 20
+      # 构建
+      - name: Build VuePress site
+        run: npm install && npm run docs:build
 
   # Single deploy job since we're just deploying
   deploy:
