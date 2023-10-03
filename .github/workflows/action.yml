@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -34,6 +34,13 @@ jobs:
       # 构建
       - name: Build VuePress site
         run: npm install && npm run docs:build
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-without-markdown
+          path: |
+            docs/.vuepress/dist
 
   # Deploy job
   deploy:
@@ -56,3 +63,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+    
+    outputs:
+      page_url: help.coolhub.top
