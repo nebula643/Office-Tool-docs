@@ -1,6 +1,5 @@
 # 快捷键命令
 
-- <kbd>Esc</kbd>: 关闭右侧面板（如果已打开）
 - <kbd>F1</kbd>: 显示帮助
 - <kbd>Ctrl + 1</kbd>: 切换到主页
 - <kbd>Ctrl + 2</kbd>: 切换到部署页面
@@ -15,17 +14,15 @@
 - <kbd>Alt + ←</kbd>: 返回上一页
 - <kbd>Ctrl + Shift + P</kbd>: 打开命令框
 
-### 部署页面
+## 部署页面
 
 - <kbd>F5</kbd> & <kbd>Ctrl + R</kbd>: 刷新 Office 信息并重置配置
 - <kbd>Ctrl + I</kbd>: 从网络导入配置文件
 - <kbd>Ctrl + O</kbd>: 打开配置文件
 - <kbd>Ctrl + S</kbd>: 保存配置文件到本地
 - <kbd>Ctrl + E</kbd>: 查看 XML 配置代码
-- <kbd>Ctrl + Alt + P</kbd>: 打开产品列表
-- <kbd>Ctrl + Alt + L</kbd>: 打开语言列表
 
-### 激活页面
+## 激活页面
 
 - <kbd>Ctrl + D</kbd>: 刷新许可证列表
 - <kbd>Ctrl + Shift + D</kbd>: 刷新许可证列表并显示所有的许可证
