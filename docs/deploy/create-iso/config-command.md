@@ -1,8 +1,8 @@
-# 使用 loadConfig 的 ISO
+# 使用 loadconfig 的 ISO
 
 创建 Office ISO 前，您需要在 Office Tool Plus 的根目录（Office Tool 文件夹）内创建批处理文件，例如 Setup.bat。
 
-使用 `/loadConfig` 命令可以加载 XML 配置文件，并修改其中的参数，以便进行安装。
+使用 `/loadconfig` 命令可以加载 XML 配置文件，并修改其中的参数，以便进行安装。
 
 例如如果您创建了同时包含 32 位和 64 位的 Office ISO，您可以使用以下命令安装对应的版本：
 
@@ -13,7 +13,7 @@
 title Office Tool Plus - Console
 
 :: For 32-bit
-"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 32
+"Office Tool Plus.exe" /loadconfig %~dp0ConfigForISO.xml /srcpath %~dp0 /edition 32
 ```
 
 ``` batch
@@ -21,7 +21,7 @@ title Office Tool Plus - Console
 title Office Tool Plus - Console
 
 :: For 64-bit
-"Office Tool Plus.exe" /loadConfig %~dp0ConfigForISO.xml /SourcePath %~dp0 /edition 64
+"Office Tool Plus.exe" /loadconfig %~dp0ConfigForISO.xml /srcpath %~dp0 /edition 64
 ```
 
 ::: tip 小知识

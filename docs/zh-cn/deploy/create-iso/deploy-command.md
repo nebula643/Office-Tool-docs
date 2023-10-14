@@ -10,7 +10,7 @@
 @echo off
 title Office Tool Plus - Console
 
-"Office Tool Plus" deploy /addProduct O365ProPlusRetail_zh-cn_Access,Bing,Groove,Lync,OneDrive /sourcePath %~dp0 /clientEdition 32 /channel Current /version 16.0.xxxxx.xxxxx
+"Office Tool Plus" deploy /add O365ProPlusRetail_zh-cn /O365ProPlusRetail.ExclApps Access,Bing,Groove,Lync,OneDrive /srcpath %~dp0 /edition 32 /channel Current /ver 16.0.xxxxx.xxxxx
 ```
 
 如果您需要等待安装完成，请调用 Office Tool Plus.Console：
@@ -25,12 +25,12 @@ set "Apply=%*"
 cd /d "%~dp0" && ( if exist "%temp%\getadmin.vbs" del "%temp%\getadmin.vbs" ) && fsutil dirty query %systemdrive% 1>nul 2>nul || (  cmd /u /c echo Set UAC = CreateObject^("Shell.Application"^) : UAC.ShellExecute "cmd.exe", "/k cd ""%~sdp0"" && ""%~s0"" %Apply%", "", "runas", 1 >> "%temp%\getadmin.vbs" && "%temp%\getadmin.vbs" && exit /B )
 
 :: Run commands.
-"Office Tool Plus.Console" deploy /addProduct O365ProPlusRetail_zh-cn_Access,Bing,Groove,Lync,OneDrive /sourcePath %~dp0 /clientEdition 32 /channel Current /version 16.0.xxxxx.xxxxx
+"Office Tool Plus.Console" deploy /add O365ProPlusRetail_zh-cn /O365ProPlusRetail.ExclApps Access,Bing,Groove,Lync,OneDrive /srcpath %~dp0 /edition 32 /channel Current /ver 16.0.xxxxx.xxxxx
 ```
 
 ::: warning 注意
 
-请根据实际情况将 `/channel`, `/version` 和 `/clientEdition` 参数替换为实际值，否则安装会失败。
+请根据实际情况将 `/channel`, `/ver` 和 `/edition` 参数替换为实际值，否则安装会失败。
 
 :::
 
