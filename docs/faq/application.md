@@ -1,6 +1,6 @@
 # Application Questions
 
-## Insufficient memory to continue the execution of the program.
+## Insufficient memory to continue the execution of the program
 
 Disconnect network, then open Office Tool Plus again.
 

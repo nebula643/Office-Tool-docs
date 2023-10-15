@@ -1,89 +1,78 @@
-# Function introduction
+# 功能介绍
 
-Users who have already bought Office from Microsoft can activate by login Microsoft account to Office applications.
+在激活页面，你可以安装许可证、安装产品密钥，配置 KMS 等，进行 Office 的激活。
 
-If you have activated Office before, you can clear the Office activation to avoid problems. Go to "License management" or "Key management" to find "Clear activation".
+购买有正版授权的用户可直接打开 Office 应用程序并登录微软账号即可激活 Office.
 
-## Licenses description
+## 许可证说明
 
-### Retail licenses
+### 零售（Retail）许可证
 
-Retail licenses can only be activated with a key. For Microsoft 365 (_formerly Office 365_) product, they can only be activated by logging into a Microsoft account with a genuine license.
+零售许可证只能使用产品密钥激活，对于 Microsoft 365（Office 365）系列产品，只能通过登录拥有正版许可证的微软账户激活。
 
-Most retail licenses are linked to a Microsoft account.
+目前大多数的零售许可都与微软账户绑定，因此零售版产品通常不使用 Office Tool Plus 进行激活。
 
-### Volume licenses
+### 批量（Volume）许可证
 
-Volume licenses can be activated using a key, or using KMS.
+批量许可证可以使用 MAK 激活，也能使用 KMS 激活。
 
-- Multiple Activation Key has a maximum number of activations, you can use and activate Office multiple times.
-- Key Management Service activation requires the use of GVLK and the setup of a KMS host.
+- MAK 指的是批量激活密钥（Multiple Activation Key），该密钥有激活次数上限，可以多次使用并激活 Office.
+- KMS 激活指的是使用密钥管理服务（Key Management Service）进行激活，KMS 激活需要使用 GVLK，并设置 KMS 主机。
 
-Activation with MAK is permanent if the activation information is not lost.
+在激活信息不丢失的情况下，使用 MAK 激活为永久激活。
 
-The KMS renewal settings is determined by the KMS host. Typically, an activation is valid for 180 days and is renewed every 7 days.
+KMS 续期策略由 KMS 主机决定。通常情况下，一次激活的有效期是 180 天，每隔 7 天续期一次。
 
-## License management
+## 许可证管理
 
-If you didn't install Office, or the existing version of Office is too old, Office Tool Plus will NOT read the Office license information, and will NOT show the license in the drop-down list.
+### 安装许可证
 
-### Install licenses
+你可以从列表中找到你需要的许可证并安装，按住 Ctrl 可以同时选择多个许可证。Office Tool Plus 为零售许可证内置了默认密钥，为批量许可证内置了 GVLK 密钥。
 
-You can find the license you need in the license drop-down list, and then click "install license" to start the operation.
+安装许可证时，原有的许可证不会被覆盖也不会被清除，因此许可证可以共存。
 
-Office Tools Plus has integrated default keys for the retail licenses, and GVLK for the volume licenses. As a result, you can use KMS to activate your Office just after you installed the volume license without additionally installing GVLK.
+### 安装其他许可证
 
-When you are installing a license, the original licenses will NOT be covered, the licenses will coexist.
+如果你需要，你可以安装其他许可证，通常情况下，Office 许可证储存在 `C:\Program Files\Microsoft Office\root\Licenses16`，你可以复制给其他计算机使用。使用该功能不会安装 Office 产品密钥，需要自行安装密钥。
 
-### Install other licenses
+### 卸载所有许可证
 
-You can install other licenses if you need. Usually, Office licenses is stored at `C:\Program Files\Microsoft Office\root\Licenses16`, you can copy it to other computers. This feature will NOT install keys. You need to install it by yourself.
+此功能会删除系统上安装了的所有的 Office 许可证，不会清除密钥。
 
-### Reset license status
+## 密钥管理
 
-This function will reset the license status. You can choose to reset all licenses or a certain license.
+### 安装密钥
 
-### Clear all licenses
+输入一个完整的 Office 产品密钥即可进行安装。如果你在安装产品密钥时显示错误代码 [0xC004F069](/zh-cn/faq/activation.md#_0xc004f069)，请确保你已经安装该密钥对应的 Office 许可证。
 
-This function will remove all Office licenses on your computer, but it will NOT delete the keys.
+### 卸载所有未激活的密钥
 
-## Key management
+此功能会检索当前所有的 Office 许可证，并自动卸载未激活的产品密钥。进行此操作可能会丢失你的 Office 产品密钥，请小心执行。
 
-### Install key
+### 安装确认 ID (CID)
 
-Installs a product key (replaces existing key) with a provided product key. If you get a message "Product SKU is not found" when installing a key, please install the correct license first.
+此功能允许你输入并安装一个确认 ID，用于电话激活。
 
-An example of the key: XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+## KMS 管理
 
-### Uninstall key
+KMS 主机可以是一个域名，也可以是一个 IP 地址，例如：kms.example.com 或者 192.168.123.1
 
-Uninstalls an installed product key with the last five digits of the product key to uninstall, you can use "Display activation information" to find the key.
+KMS 主机的默认端口是 1688，如果需要，可以手动输入指定为其他端口。
 
-### View Installation ID (IID)
+## 许可证列表
 
-This function will display Installation ID for offline activation.
+您可以从这里检索当前设备上已安装的 Office 许可证的信息，支持 vNext 许可证和传统的 Office 许可证。
 
-### Install Confirm ID (CID)
+::: tip 什么是 vNext 许可证？
 
-You can activate product with provided Confirmation ID.
+vNext 许可证是 Microsoft 订阅用户的专属许可证，通常是 Microsoft 365 个人/家庭版订阅或 Microsoft 365 企业版订阅许可证。这些许可证与微软账户绑定，具有一定的时间限制，通常情况下需要在两个月内联网验证可用性，否则 Office 可能会弹出订阅过期的提示。
 
-## KMS management
+:::
 
-KMS host can be a hostname, or an IP address.
-For example：`kms.example.com` or `192.168.123.1`
+### vNext 许可证
 
-The default port of the KMS host is 1688, You may choose the custom port if necessary.
+Office Tool Plus 支持查看 vNext 许可证的状态、期限、使用者等信息。您也可以在这里删除不想要/不需要的 vNext 许可证。在删除之前，建议先从 Office 应用程序内退出相应微软账户的登录。
 
-You can only apply the port, or apply the port with the host address. If the KMS port is not empty, clicking "Set KMS host" will also save the port setting.
+### Office 传统许可证
 
-## Clear activation
-
-This function will delete all Office licenses and keys on your system. Your Office Activation status will be lost. And if you don't install new licenses, Office applications will report an error at the first time it starts.
-
-## Display activation information
-
-This function will show the information of all the keys and licenses installed on your computer, including SKU ID, key information, and license(s) status. If you use KMS licenses, it will also show the information of the KMS host.
-
-## Display licenses information
-
-This function will show all the existing licenses on your computer, regardless of whether the license has a key installed.
+Office Tool Plus 支持查看许可证的基础信息，可以针对单个许可证卸载产品密钥，也可以获取安装 ID 以用于电话激活。

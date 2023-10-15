@@ -1,10 +1,11 @@
 ---
 home: true
-heroImage: https://otp.landian.vip/static/images/logo.webp
+heroImage: /images/logo.webp
 heroText: 
 tagline: 一个强大且实用的 Office 部署工具
-actionText: 开始入门
-actionLink: /zh-cn/start/
+actions:
+  - text: 开始
+    link: /zh-cn/start/
 features:
 - title: 简单
   details: 只需几步配置，便可开始部署 Office.
