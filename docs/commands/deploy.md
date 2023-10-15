@@ -38,7 +38,7 @@ deploy /add O365ProPlusRetail_en-us
 
 When specifying multiple applications or languages, you need to separate them with commas. Such as `Access,Lync` or `en-us,en-us`.
 
-If you need to add/remove language packs or proofreading tools, use `LanguagePack` or `ProofingTools` as product ID.
+If you need to add or remove languages or proofing tools, use `LanguagePack` or `ProofingTools` as product ID.
 
 Deploying Office 2021 Professional Plus - Volume Edition, English (US), excluding Access, Outlook, OneNote, you can write this:
 
@@ -46,7 +46,7 @@ Deploying Office 2021 Professional Plus - Volume Edition, English (US), excludin
 deploy /add ProPlus2021Volume_en-us /ProPlus2021Volume.ExclApps Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
-When using local source to deploy Office, You need to specify `/srcpath` and `/ver` command. For 64-bit of Office, use `/edition` command:
+To use local source to deploy Office, You need to specify `/srcpath` and `/ver` command. For 64-bit of Office, use `/edition` command:
 
 ``` batch
 deploy /add O365ProPlusRetail_en-us /O365ProPlusRetail.ExclApps Access,Outlook,OneNote /edition 64 /srcpath "D:\Test\Office Tool" /ver 16.0.xxxxx.xxxxx

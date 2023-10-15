@@ -29,7 +29,7 @@ These commands can be only used on command-line.
 
 ## Office Tool Plus Console Helper
 
-Office Tool Plus.Console is a command-line program. When execute commands via Office Tool Plus, the shell will not wait Office Tool Plus to finish. When executing commands via Office Tool Plus.Console, the shell will wait program to exit and support logging.
+Office Tool Plus.Console is a command-line program. When executing commands via Office Tool Plus, the shell will not wait Office Tool Plus to finish. When executing commands via Office Tool Plus.Console, the shell will wait program to exit and support logging.
 
 For example the following command enable the log output:
 
