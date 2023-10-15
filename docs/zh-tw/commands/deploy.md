@@ -38,7 +38,7 @@ deploy /add O365ProPlusRetail_zh-cn
 
 指定多个应用程序或语言时，你需要使用「英文逗号」将其隔开，例如 `Access,Lync` 或 `zh-cn,en-us`
 
-如果需要添加语言包或者校对工具，请使用 `LanguagePack` 或 `ProofingTools` 作为产品 ID，卸载同理。
+如果需要添加/卸载语言包或者校对工具，请使用 `LanguagePack` 或 `ProofingTools` 作为产品 ID。
 
 部署 Office 2021 专业增强版 - 批量版，简体中文，排除 Access, Outlook, OneNote，可以这样写：
 

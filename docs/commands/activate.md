@@ -1,6 +1,6 @@
 # Activation Commands
 
-These commands can be used on command box and the command line. The commands are not case-sensitive.
+These commands can be used on command box and the command-line. The commands are not case-sensitive.
 
 ``` batch
 ospp params
@@ -23,4 +23,4 @@ ospp /inslicid ProPlus2021Volume /inpkey XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /act
 | /sethst *value* | Set KMS host. | /sethst kms.example.com |
 | /setprt *value* | Set KMS port. Default port: 1688 | /setprt 1688 |
 | /act            | Activate Office product(s). | /act |
-| /dstatus        | Display the Office activation info (only available on command line). | /dstatus |
+| /dstatus        | Display the Office activation info (only available on command-line). | /dstatus |

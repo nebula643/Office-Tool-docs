@@ -1,6 +1,6 @@
 # Deploy Commands
 
-These commands can be used on command box and the command line. The commands are not case-sensitive. If a command argument contains spaces, use "" (double quotes) to include them.
+These commands can be used on command box and the command-line. The commands are not case-sensitive. If a command argument contains spaces, use "" (double quotes) to include them.
 
 ``` batch
 deploy params
@@ -36,17 +36,17 @@ deploy /add O365ProPlusRetail_en-us
 
 ## Deploying Office Examples
 
-指定多个应用程序或语言时，你需要使用「英文逗号」将其隔开，例如 `Access,Lync` 或 `en-us,en-us`
+When specifying multiple applications or languages, you need to separate them with commas. Such as `Access,Lync` or `en-us,en-us`.
 
-如果需要添加语言包或者校对工具，请使用 `LanguagePack` 或 `ProofingTools` 作为产品 ID，卸载同理。
+If you need to add/remove language packs or proofreading tools, use `LanguagePack` or `ProofingTools` as product ID.
 
-部署 Office 2021 专业增强版 - 批量版，简体中文，排除 Access, Outlook, OneNote，可以这样写：
+Deploying Office 2021 Professional Plus - Volume Edition, English (US), excluding Access, Outlook, OneNote, you can write this:
 
 ``` batch
 deploy /add ProPlus2021Volume_en-us /ProPlus2021Volume.ExclApps Access,Outlook,OneNote /channel PerpetualVL2021
 ```
 
-使用本地源部署 Office 时，你需要设置 `/srcpath` 和 `/ver` 参数。如果安装 64 位的 Office，还需设置 `/edition` 参数：
+When using local source to deploy Office, You need to specify `/srcpath` and `/ver` command. For 64-bit of Office, use `/edition` command:
 
 ``` batch
 deploy /add O365ProPlusRetail_en-us /O365ProPlusRetail.ExclApps Access,Outlook,OneNote /edition 64 /srcpath "D:\Test\Office Tool" /ver 16.0.xxxxx.xxxxx

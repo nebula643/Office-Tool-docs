@@ -23,8 +23,8 @@
 | :-- | :-- | :-- |
 | /isoinstall | 读取 ISO 配置文件并启动安装程序。 | 你必须创建 Office ISO，确保 ISO 内含 ConfigForISO.xml，挂载后再执行命令 |
 | /loadconfig *value* | 读取 XML 配置文件并启动安装程序。 | *value*: XML 文件路径 |
-| /srcpath *value* | 覆写 XML 配置文件中的源路径属性，该命令需配合 `/loadConfig` 命令使用 |
-| /edition *value* | 覆写 XML 配置文件中的体系结构属性，*value*: `32` 或 `64`，该命令需配合 `/loadConfig` 命令使用 |
+| /srcpath *value* | 覆写 XML 配置文件中的源路径属性，该命令需配合 `/loadConfig` 命令使用 | *value*: 源路径 |
+| /edition *value* | 覆写 XML 配置文件中的体系结构属性。该命令需配合 `/loadConfig` 命令使用 | *value*: `32` 或 `64` |
 | /enablehwacc *value* | 启用硬件加速 | *value*: `true` 或 `false`，默认为 `true` |
 
 ## Office Tool Plus Console Helper
@@ -48,8 +48,6 @@ Office Tool Plus.Console 是一个命令行程序，默认情况下，通过 Off
 ``` batch
 "Office Tool Plus.Console" deploy /add ...
 ```
-
-您可以先执行 `deploy` 命令，然后执行 `ospp` 命令，以便达到自动安装以及激活的效果。
 
 ### Batch 文件
 
