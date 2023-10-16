@@ -1,6 +1,6 @@
 # Office 工具
 
-## 移除 Office
+## 解除安裝 Office
 
 此功能支持移除所有版本的 Office.
 
@@ -16,7 +16,7 @@ Get-AppxPackage -name "Microsoft.Office.Desktop" | Remove-AppxPackage
 
 获取详细信息请访问[從電腦解除安裝 Office](https://support.microsoft.com/zh-tw/office/從電腦解除安裝-office-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-## 更改 Office 更新通道
+## 變更 Office 更新通道
 
 此功能可以更改 Office 更新通道，从而实现不重装进行 Office 的升级/降级。
 
@@ -26,7 +26,7 @@ Office 企业版长期通道被锁定，一般情况下无法更改，也无法�
 
 :::
 
-## 更改 Office 产品属于者
+## 變更 Office 產品擁有者名稱
 
 Office 产品属于者指的是许可证的属于者，例如下图中的 *Yerong™ | NekoNeko*：
 
@@ -48,7 +48,7 @@ Office Tool Plus 无法识别您自行安装的 Office 传统许可证，因此�
 
 第二步，回到工具箱，在`更改 Office 产品属于者`中按照以下格式输入 `[User ID]:[Name]`
 
-User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`bbbbxxx:Yerong™ | Nachoneko`
+User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`bbbbxxx:祝英台`
 
 ![Change product owner](/images/zh-tw/toolbox/change-license-owner.png)
 
@@ -60,9 +60,7 @@ User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`
 
 然后回到工具箱，在`更改 Office 产品属于者`中按照以下格式输入 `[Product ID]:[Name]`
 
-Product ID 为产品 ID，Name 是你想设置的名字，例如：`ProPlus2021Volume:Yerong™ | Nachoneko`
-
-![Change product owner](/images/zh-tw/toolbox/change-product-owner.png)
+Product ID 为产品 ID，Name 是你想设置的名字，例如：`ProPlus2021Volume:祝英台`
 
 填写完成后，点击`设置名称`按钮，重启你的 Office 应用程序即可看到新的名称。
 

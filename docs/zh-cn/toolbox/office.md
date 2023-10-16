@@ -48,7 +48,7 @@ Office Tool Plus 无法识别您自行安装的 Office 传统许可证，因此�
 
 第二步，回到工具箱，在`更改 Office 产品属于者`中按照以下格式输入 `[User ID]:[Name]`
 
-User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`bbbbxxx:Yerong™ | Nachoneko`
+User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`bbbbxxx:小明`
 
 ![Change product owner](/images/zh-cn/toolbox/change-license-owner.png)
 
@@ -60,9 +60,7 @@ User ID 为刚才复制的用户 ID，Name 是你想设置的名字，例如：`
 
 然后回到工具箱，在`更改 Office 产品属于者`中按照以下格式输入 `[Product ID]:[Name]`
 
-Product ID 为产品 ID，Name 是你想设置的名字，例如：`ProPlus2021Volume:Yerong™ | Nachoneko`
-
-![Change product owner](/images/zh-cn/toolbox/change-product-owner.png)
+Product ID 为产品 ID，Name 是你想设置的名字，例如：`ProPlus2021Volume:小明`
 
 填写完成后，点击`设置名称`按钮，重启你的 Office 应用程序即可看到新的名称。
 
